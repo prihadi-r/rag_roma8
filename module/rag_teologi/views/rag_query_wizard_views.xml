@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_rag_query_wizard_form" model="ir.ui.view">
+        <field name="name">rag.query.wizard.form</field>
+        <field name="model">rag.query.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Tanya RAG">
+                <field name="question" placeholder="Contoh: Mengapa Paulus berkata tidak ada penghukuman?"
+                       class="w-100"/>
+                <group>
+                    <field name="config_id"
+                           domain="[('active', '=', True)]"
+                           options="{'no_create': True, 'no_open': False}"
+                           help="Pilih pengaturan RAG yang dipakai khusus untuk kueri ini. Bila kosong, dipakai pengaturan aktif."/>
+                </group>
+                <field name="info" nolabel="1" class="w-100"/>
+                <notebook>
+                    <page string="Jawaban" name="jawaban">
+                        <field name="answer" nolabel="1" class="w-100"/>
+                    </page>
+                    <page string="Teks Asli (Yunani)" name="teks_asli">
+                        <field name="greek_quotes" nolabel="1" class="w-100 text-monospace"/>
+                    </page>
+                </notebook>
+                <group string="Ayat Terambil">
+                    <field name="hit_ids" nolabel="1" readonly="1">
+                        <list>
+                            <field name="label"/>
+                            <field name="state"/>
+                        </list>
+                    </field>
+                </group>
+                <footer>
+                    <button name="action_ask" type="object" string="Tanya" class="btn-primary"/>
+                    <button string="Tutup" special="cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_rag_query_wizard" model="ir.actions.act_window">
+        <field name="name">Tanya RAG</field>
+        <field name="res_model">rag.query.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Sinonim teologis: menambah daya cari full-text untuk pertanyaan generik -->
+        <record id="exp_keselamatan" model="rag.query.expansion">
+            <field name="term">keselamatan</field>
+            <field name="note">Pertanyaan "keselamatan" pada Roma 8 menjangkau rantai emas 8:29-30</field>
+            <field name="line_ids" eval="[(5,0,0),
+                (0,0,{'word':'diselamatkan'}), (0,0,{'word':'penebusan'}),
+                (0,0,{'word':'dibenarkan'}), (0,0,{'word':'dimuliakan'}),
+                (0,0,{'word':'dipanggil'}), (0,0,{'word':'ditetapkan'}),
+                (0,0,{'word':'serupa'})]"/>
+        </record>
+
+        <record id="exp_penghukuman" model="rag.query.expansion">
+            <field name="term">penghukuman</field>
+            <field name="line_ids" eval="[(5,0,0),
+                (0,0,{'word':'hukuman'}), (0,0,{'word':'katakrima'}),
+                (0,0,{'word':'menghukum'})]"/>
+        </record>
+
+        <record id="exp_kemuliaan" model="rag.query.expansion">
+            <field name="term">kemuliaan</field>
+            <field name="line_ids" eval="[(5,0,0),
+                (0,0,{'word':'dimuliakan'}), (0,0,{'word':'dinyatakan'}),
+                (0,0,{'word':'doxa'})]"/>
+        </record>
+
+        <record id="exp_anak" model="rag.query.expansion">
+            <field name="term">anak</field>
+            <field name="line_ids" eval="[(5,0,0),
+                (0,0,{'word':'pengangkatan'}), (0,0,{'word':'adopsi'}),
+                (0,0,{'word':'ahli'}), (0,0,{'word':'waris'}),
+                (0,0,{'word':'huiothesia'})]"/>
+        </record>
+
+        <record id="exp_roh" model="rag.query.expansion">
+            <field name="term">roh</field>
+            <field name="line_ids" eval="[(5,0,0),
+                (0,0,{'word':'pneuma'}), (0,0,{'word':'roh kudus'})]"/>
+        </record>
+
+        <record id="exp_daging" model="rag.query.expansion">
+            <field name="term">daging</field>
+            <field name="line_ids" eval="[(5,0,0),
+                (0,0,{'word':'sarx'}), (0,0,{'word':'keinginan'}), (0,0,{'word':'dosa'})]"/>
+        </record>
+
+        <record id="exp_pengharapan" model="rag.query.expansion">
+            <field name="term">pengharapan</field>
+            <field name="line_ids" eval="[(5,0,0),
+                (0,0,{'word':'berharap'}), (0,0,{'word':'menantikan'}), (0,0,{'word':'elpis'})]"/>
+        </record>
+
+        <record id="exp_iman" model="rag.query.expansion">
+            <field name="term">iman</field>
+            <field name="line_ids" eval="[(5,0,0),
+                (0,0,{'word':'percaya'}), (0,0,{'word':'pistis'})]"/>
+        </record>
+
+        <record id="exp_kasih" model="rag.query.expansion">
+            <field name="term">kasih</field>
+            <field name="line_ids" eval="[(5,0,0),
+                (0,0,{'word':'mengasihi'}), (0,0,{'word':'agape'})]"/>
+        </record>
+
+        <record id="exp_hukum" model="rag.query.expansion">
+            <field name="term">hukum</field>
+            <field name="line_ids" eval="[(5,0,0),
+                (0,0,{'word':'taurat'}), (0,0,{'word':'nomos'})]"/>
+        </record>
+
+        <record id="exp_maut" model="rag.query.expansion">
+            <field name="term">maut</field>
+            <field name="line_ids" eval="[(5,0,0),
+                (0,0,{'word':'kematian'}), (0,0,{'word':'thanatos'})]"/>
+        </record>
+
+        <record id="exp_predestinasi" model="rag.query.expansion">
+            <field name="term">predestinasi</field>
+            <field name="line_ids" eval="[(5,0,0),
+                (0,0,{'word':'ditetapkan'}), (0,0,{'word':'dikenal'}), (0,0,{'word':'dipanggil'}),
+                (0,0,{'word':'dibenarkan'}), (0,0,{'word':'dimuliakan'})]"/>
+        </record>
+
+    </data>
+</odoo>

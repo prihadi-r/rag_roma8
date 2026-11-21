@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="module_category_rag" model="ir.module.category">
+        <field name="name">RAG Teologi</field>
+        <field name="description">Hak akses mesin RAG Roma 8</field>
+        <field name="sequence">60</field>
+    </record>
+
+    <record id="group_rag_user" model="res.groups">
+        <field name="name">RAG User</field>
+        <field name="category_id" ref="module_category_rag"/>
+        <field name="comment">Mengajukan kueri dan melihat riwayatnya sendiri.</field>
+    </record>
+
+    <record id="group_rag_manager" model="res.groups">
+        <field name="name">RAG Manager</field>
+        <field name="category_id" ref="module_category_rag"/>
+        <field name="implied_ids" eval="[(4, ref('group_rag_user'))]"/>
+        <field name="comment">Mengelola master data, konfigurasi, impor, dan re-embedding.</field>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+    </record>
+
+    <!-- RAG User hanya melihat riwayat kuerinya sendiri -->
+    <record id="rule_query_log_own" model="ir.rule">
+        <field name="name">RAG: riwayat kueri milik sendiri</field>
+        <field name="model_id" ref="model_rag_query_log"/>
+        <field name="domain_force">[('user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('group_rag_user'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+
+    <record id="rule_query_log_all" model="ir.rule">
+        <field name="name">RAG: semua riwayat kueri (manager)</field>
+        <field name="model_id" ref="model_rag_query_log"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_rag_manager'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+
+    <record id="rule_query_hit_own" model="ir.rule">
+        <field name="name">RAG: hit pada kueri sendiri</field>
+        <field name="model_id" ref="model_rag_query_hit"/>
+        <field name="domain_force">[('query_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('group_rag_user'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+
+    <record id="rule_query_hit_all" model="ir.rule">
+        <field name="name">RAG: semua hit (manager)</field>
+        <field name="model_id" ref="model_rag_query_hit"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_rag_manager'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+</odoo>

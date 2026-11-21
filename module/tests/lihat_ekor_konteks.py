@@ -1,0 +1,11 @@
+Svc = env['rag.query.service']; cfg = env['rag.config'].get_active()
+q = "Bagaimana pandangan Paulus mengenai keselamatan?"
+hasil = Svc._cari_hybrid(q, cfg, cfg.embedding_model_id, {})
+k = Svc._bangun_konteks(hasil, cfg)
+print("panjang:", len(k), "| ada penanda potong:", "dipotong karena batas" in k)
+print("ada blok varian:", "[VARIAN TEKSTUAL]" in k)
+print("\n--- bagian 8:28 s.d. 8:30 ---")
+i = k.find("Roma 8:28")
+print(k[i-20:i+700])
+print("\n--- 400 karakter terakhir ---")
+print(k[-400:])

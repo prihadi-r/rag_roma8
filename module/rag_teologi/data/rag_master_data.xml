@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Jenis unit pencarian -->
+        <record id="chunk_kind_verse" model="rag.chunk.kind">
+            <field name="name">Ayat</field><field name="code">verse</field><field name="sequence">10</field>
+        </record>
+        <record id="chunk_kind_window" model="rag.chunk.kind">
+            <field name="name">Jendela ±1 Ayat</field><field name="code">window_3</field><field name="sequence">20</field>
+        </record>
+        <record id="chunk_kind_pericope" model="rag.chunk.kind">
+            <field name="name">Perikop</field><field name="code">pericope</field><field name="sequence">30</field>
+        </record>
+
+        <!-- Saksi tekstual -->
+        <record id="witness_byz" model="rag.witness">
+            <field name="name">Byzantine (Robinson-Pierpont)</field><field name="code">BYZ</field><field name="sequence">10</field>
+        </record>
+        <record id="witness_na" model="rag.witness">
+            <field name="name">Nestle-Aland</field><field name="code">NA</field><field name="sequence">20</field>
+        </record>
+        <record id="witness_ecm" model="rag.witness">
+            <field name="name">Editio Critica Maior</field><field name="code">ECM</field><field name="sequence">30</field>
+        </record>
+        <record id="witness_tr" model="rag.witness">
+            <field name="name">Textus Receptus</field><field name="code">TR</field><field name="sequence">40</field>
+        </record>
+
+        <!-- Jenis varian -->
+        <record id="variant_type_omission" model="rag.variant.type">
+            <field name="name">Penghilangan</field><field name="code">omission</field><field name="sequence">10</field>
+        </record>
+        <record id="variant_type_addition" model="rag.variant.type">
+            <field name="name">Penambahan</field><field name="code">addition</field><field name="sequence">20</field>
+        </record>
+        <record id="variant_type_substitution" model="rag.variant.type">
+            <field name="name">Substitusi</field><field name="code">substitution</field><field name="sequence">30</field>
+        </record>
+        <record id="variant_type_transposition" model="rag.variant.type">
+            <field name="name">Perpindahan</field><field name="code">transposition</field><field name="sequence">40</field>
+        </record>
+
+        <!-- Jalur kueri -->
+        <record id="route_direct" model="rag.query.route">
+            <field name="name">Pencarian Langsung</field><field name="code">direct</field><field name="sequence">10</field>
+            <field name="description">Kueri menyebut nomor ayat; varian tekstual disajikan dari tabel, bukan disimpulkan LLM.</field>
+        </record>
+        <record id="route_hybrid" model="rag.query.route">
+            <field name="name">Pencarian Hybrid</field><field name="code">hybrid</field><field name="sequence">20</field>
+            <field name="description">Kueri konseptual; vektor + full-text digabung dengan RRF.</field>
+        </record>
+
+        <!-- Model embedding -->
+        <record id="embedding_model_bge_m3" model="rag.embedding.model">
+            <field name="name">bge-m3-Q8_0</field>
+            <field name="provider">llamacpp</field>
+            <field name="api_model">bge-m3</field>
+            <field name="endpoint">http://127.0.0.1:8080/v1/embeddings</field>
+            <field name="dimensions">1024</field>
+            <field name="quantization">Q8_0</field>
+            <field name="normalized" eval="True"/>
+        </record>
+
+        <!-- Templat prompt -->
+        <record id="prompt_system_v1" model="rag.prompt.template">
+            <field name="name">eksposisi-grounding</field>
+            <field name="role">system</field>
+            <field name="version">1</field>
+            <field name="body">Anda adalah asisten eksegesis Alkitab yang ketat.
+
+ATURAN:
+1. Jawab HANYA berdasarkan KONTEKS yang diberikan. Jangan menambahkan ayat lain.
+2. Setiap klaim harus menyebut nomor ayat dan mengutip kata persis dari konteks.
+3. Jika ada baris "Varian", bandingkan KEHADIRAN klausa antar saksi — bukan hanya pilihan kata.
+4. Jika konteks tidak memuat jawabannya, katakan demikian. Jangan mengarang.
+5. Bahasa: Indonesia. Istilah Yunani ditulis dalam huruf Yunani bila tersedia.</field>
+        </record>
+
+        <record id="prompt_context_v1" model="rag.prompt.template">
+            <field name="name">context-builder</field>
+            <field name="role">context_builder</field>
+            <field name="version">1</field>
+            <field name="body">[PERIKOP {{pericope_range}} — {{pericope_title}}]
+{{pericope_summary}}
+
+[AYAT TERAMBIL]
+{{verses}}
+
+[VARIAN TEKSTUAL]
+{{variants}}</field>
+        </record>
+
+        <!-- Konfigurasi awal -->
+        <record id="config_default" model="rag.config">
+            <field name="name">Roma 8 — lokal</field>
+            <field name="chat_base_url">http://127.0.0.1:8081/v1</field>
+            <field name="chat_model">qwen2.5-7b-instruct</field>
+            <field name="embed_base_url">http://127.0.0.1:8080/v1</field>
+            <field name="embedding_model_id" ref="embedding_model_bge_m3"/>
+            <field name="prompt_template_id" ref="prompt_system_v1"/>
+        </record>
+
+    </data>
+</odoo>

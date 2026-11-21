@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_rag_query_log_list" model="ir.ui.view">
+        <field name="name">rag.query.log.list</field>
+        <field name="model">rag.query.log</field>
+        <field name="arch" type="xml">
+            <list string="Riwayat Kueri">
+                <field name="create_date"/>
+                <field name="name"/>
+                <field name="route_id"/>
+                <field name="hit_count"/>
+                <field name="latency_s"/>
+                <field name="user_id"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'success'"
+                       decoration-danger="state == 'error'"
+                       decoration-info="state in ('draft', 'running')"/>
+                <button name="action_run" type="object" icon="fa-play"
+                        title="Jalankan kueri ini"
+                        invisible="state not in ('draft', 'error')"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_rag_query_log_form" model="ir.ui.view">
+        <field name="name">rag.query.log.form</field>
+        <field name="model">rag.query.log</field>
+        <field name="arch" type="xml">
+            <form string="Riwayat Kueri">
+                <header>
+                    <button name="action_run" type="object" string="Jalankan Kueri"
+                            class="btn-primary" icon="fa-play"
+                            invisible="state not in ('draft', 'error')"/>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="draft,running,success,error"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="route_id"/>
+                            <field name="user_id"/>
+                            <field name="latency_s"/>
+                        </group>
+                        <group>
+                            <field name="prompt_tokens"/>
+                            <field name="completion_tokens"/>
+                        </group>
+                    </group>
+                    <separator string="Pertanyaan"/>
+                    <field name="question" nolabel="1" class="w-100"/>
+                    <notebook>
+                        <page string="Jawaban" name="jawaban">
+                            <field name="answer" nolabel="1" class="w-100"/>
+                        </page>
+                        <page string="Teks Asli (Yunani)" name="teks_asli">
+                            <field name="greek_quotes" nolabel="1" class="w-100 text-monospace"/>
+                        </page>
+                        <page string="Ayat Terambil" name="hits">
+                            <field name="hit_ids">
+                                <list editable="bottom">
+                                    <field name="position"/>
+                                    <field name="chunk_id"/>
+                                    <field name="rank_dense"/>
+                                    <field name="rank_fts"/>
+                                    <field name="rrf_score"/>
+                                    <field name="injected"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Parameter" name="params">
+                            <field name="params" readonly="1"/>
+                            <field name="stage_ms" readonly="1"/>
+                            <field name="citations" readonly="1"/>
+                        </page>
+                        <page string="Galat" name="error">
+                            <field name="error" readonly="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_rag_query_log" model="ir.actions.act_window">
+        <field name="name">Riwayat Kueri</field>
+        <field name="res_model">rag.query.log</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="view_rag_import_batch_list" model="ir.ui.view">
+        <field name="name">rag.import.batch.list</field>
+        <field name="model">rag.import.batch</field>
+        <field name="arch" type="xml">
+            <list string="Batch Impor">
+                <field name="create_date"/><field name="name"/><field name="source"/>
+                <field name="rows_total"/><field name="rows_ok"/><field name="rows_error"/>
+                <field name="state" widget="badge"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_rag_import_batch_form" model="ir.ui.view">
+        <field name="name">rag.import.batch.form</field>
+        <field name="model">rag.import.batch</field>
+        <field name="arch" type="xml">
+            <form string="Batch Impor">
+                <header><field name="state" widget="statusbar"/></header>
+                <sheet>
+                    <group>
+                        <group><field name="name"/><field name="source"/><field name="file_hash"/></group>
+                        <group><field name="rows_total"/><field name="rows_ok"/><field name="rows_error"/></group>
+                    </group>
+                    <field name="log" readonly="1"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_rag_import_batch" model="ir.actions.act_window">
+        <field name="name">Batch Impor</field>
+        <field name="res_model">rag.import.batch</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

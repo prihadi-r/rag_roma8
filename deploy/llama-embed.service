@@ -1,0 +1,27 @@
+[Unit]
+Description=llama.cpp embedding server (bge-m3, 1024d) untuk RAG Roma 8
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=nms
+WorkingDirectory=/home/nms/llama.cpp
+ExecStart=/home/nms/llama.cpp/build/bin/llama-server \
+  --model /home/nms/llama.cpp/models/bge-m3-Q8_0.gguf \
+  --alias bge-m3 \
+  --host 127.0.0.1 \
+  --port 8080 \
+  --embeddings \
+  --pooling cls \
+  --ctx-size 8192 \
+  --batch-size 512 \
+  --ubatch-size 512 \
+  --threads 6 \
+  --no-webui \
+  --log-colors off
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_rag_expansion_list" model="ir.ui.view">
+        <field name="name">rag.query.expansion.list</field>
+        <field name="model">rag.query.expansion</field>
+        <field name="arch" type="xml">
+            <list string="Ekspansi Kueri" editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="term"/>
+                <field name="note"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_rag_expansion_form" model="ir.ui.view">
+        <field name="name">rag.query.expansion.form</field>
+        <field name="model">rag.query.expansion</field>
+        <field name="arch" type="xml">
+            <form string="Ekspansi Kueri">
+                <sheet>
+                    <div class="oe_title"><h1><field name="term"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="note"/>
+                        </group>
+                        <group>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <separator string="Padanan yang ditambahkan ke pencarian"/>
+                    <field name="line_ids">
+                        <list editable="bottom">
+                            <field name="word"/>
+                        </list>
+                    </field>
+                    <div class="alert alert-info" role="alert">
+                        Padanan dipakai saat menyusun kueri full-text. Contoh: pertanyaan
+                        "keselamatan" juga mencari kata "dimuliakan", "dibenarkan", "dipanggil",
+                        sehingga Roma 8:29–30 ikut ditemukan.
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_rag_expansion" model="ir.actions.act_window">
+        <field name="name">Ekspansi Kueri</field>
+        <field name="res_model">rag.query.expansion</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_rag_expansion" name="Ekspansi Kueri" parent="menu_rag_configuration"
+              action="action_rag_expansion" sequence="35"/>
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_rag_root" name="RAG Teologi" sequence="60" groups="group_rag_user"/>
+
+    <menuitem id="menu_rag_data" name="Data" parent="menu_rag_root" sequence="10"/>
+    <menuitem id="menu_rag_book" name="Kitab" parent="menu_rag_data" action="action_rag_book" sequence="10"/>
+    <menuitem id="menu_rag_pericope" name="Perikop" parent="menu_rag_data" action="action_rag_pericope" sequence="20"/>
+    <menuitem id="menu_rag_verse" name="Ayat" parent="menu_rag_data" action="action_rag_verse" sequence="30"/>
+    <menuitem id="menu_rag_chunk" name="Chunk" parent="menu_rag_data" action="action_rag_chunk" sequence="40"/>
+    <menuitem id="menu_rag_variant" name="Varian Tekstual" parent="menu_rag_data" action="action_rag_variant" sequence="50"/>
+
+    <menuitem id="menu_rag_query" name="Kueri" parent="menu_rag_root" sequence="20"/>
+    <menuitem id="menu_rag_tanya" name="Tanya RAG" parent="menu_rag_query"
+              action="action_rag_query_wizard" sequence="5"/>
+    <menuitem id="menu_rag_query_log" name="Riwayat Kueri" parent="menu_rag_query" action="action_rag_query_log" sequence="10"/>
+
+    <menuitem id="menu_rag_configuration" name="Konfigurasi" parent="menu_rag_root" sequence="90"
+              groups="group_rag_manager"/>
+    <menuitem id="menu_rag_config" name="Pengaturan RAG" parent="menu_rag_configuration"
+              action="action_rag_config" sequence="10"/>
+    <menuitem id="menu_rag_embedding_model" name="Model Embedding" parent="menu_rag_configuration"
+              action="action_rag_embedding_model" sequence="20"/>
+    <menuitem id="menu_rag_prompt_template" name="Templat Prompt" parent="menu_rag_configuration"
+              action="action_rag_prompt_template" sequence="30"/>
+    <menuitem id="menu_rag_import" name="Batch Impor" parent="menu_rag_configuration"
+              action="action_rag_import_batch" sequence="40"/>
+    <menuitem id="menu_rag_import_data" name="Impor Dataset…" parent="menu_rag_configuration"
+              action="action_rag_import_wizard" sequence="50"/>
+    <menuitem id="menu_rag_chunking" name="Jalankan Chunking" parent="menu_rag_configuration"
+              action="action_rag_chunking_wizard" sequence="60"/>
+</odoo>

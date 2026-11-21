@@ -1,0 +1,14 @@
+# kredensial
+.secrets/
+
+# unduhan mentah (45 MB) — reproduksi lewat scripts/ dan docs/SUMBER-TEKS.md
+data/raw/
+data/lexicon/
+
+# artefak Python / OS
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# data runtime Odoo
+*.log

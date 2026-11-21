@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ===================== KITAB ===================== -->
+    <record id="view_rag_book_list" model="ir.ui.view">
+        <field name="name">rag.book.list</field>
+        <field name="model">rag.book</field>
+        <field name="arch" type="xml">
+            <list string="Kitab">
+                <field name="sequence" widget="handle"/>
+                <field name="code"/>
+                <field name="name_id"/>
+                <field name="name_en"/>
+                <field name="chapter_count"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_rag_book_form" model="ir.ui.view">
+        <field name="name">rag.book.form</field>
+        <field name="model">rag.book</field>
+        <field name="arch" type="xml">
+            <form string="Kitab">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="code"/>
+                            <field name="name_id"/>
+                            <field name="name_en"/>
+                        </group>
+                        <group>
+                            <field name="name_gr"/>
+                            <field name="chapter_count"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_rag_book" model="ir.actions.act_window">
+        <field name="name">Kitab</field>
+        <field name="res_model">rag.book</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- ===================== PERIKOP ===================== -->
+    <record id="view_rag_pericope_list" model="ir.ui.view">
+        <field name="name">rag.pericope.list</field>
+        <field name="model">rag.pericope</field>
+        <field name="arch" type="xml">
+            <list string="Perikop">
+                <field name="name"/>
+                <field name="chapter"/>
+                <field name="verse_start"/>
+                <field name="verse_end"/>
+                <field name="verse_count"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'ready'"
+                       decoration-warning="state == 'draft'"
+                       decoration-danger="state == 'error'"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_rag_pericope_form" model="ir.ui.view">
+        <field name="name">rag.pericope.form</field>
+        <field name="model">rag.pericope</field>
+        <field name="arch" type="xml">
+            <form string="Perikop">
+                <sheet>
+                    <div class="oe_title"><h1><field name="name"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="book_id"/>
+                            <field name="chapter"/>
+                            <field name="state"/>
+                        </group>
+                        <group>
+                            <field name="verse_start"/>
+                            <field name="verse_end"/>
+                            <field name="verse_count"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="title_id"/>
+                        <field name="title_en"/>
+                        <field name="summary_id" placeholder="Ringkasan 2–3 kalimat untuk konteks parent…"/>
+                    </group>
+                    <notebook>
+                        <page string="Ayat" name="ayat">
+                            <field name="verse_ids">
+                                <list>
+                                    <field name="ref_label"/>
+                                    <field name="word_count"/>
+                                    <field name="state"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_rag_pericope" model="ir.actions.act_window">
+        <field name="name">Perikop</field>
+        <field name="res_model">rag.pericope</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- ===================== AYAT ===================== -->
+    <record id="view_rag_verse_list" model="ir.ui.view">
+        <field name="name">rag.verse.list</field>
+        <field name="model">rag.verse</field>
+        <field name="arch" type="xml">
+            <list string="Ayat">
+                <field name="ref_label"/>
+                <field name="pericope_id"/>
+                <field name="word_count"/>
+                <field name="variant_count"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'embedded'"
+                       decoration-info="state == 'chunked'"
+                       decoration-danger="state == 'error'"/>
+                <field name="dirty" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_rag_verse_search" model="ir.ui.view">
+        <field name="name">rag.verse.search</field>
+        <field name="model">rag.verse</field>
+        <field name="arch" type="xml">
+            <search string="Cari Ayat">
+                <field name="ref_label"/>
+                <field name="greek_stripped"/>
+                <field name="ind"/>
+                <filter string="Perlu Diproses" name="dirty" domain="[('dirty','=',True)]"/>
+                <filter string="Ter-embed" name="embedded" domain="[('state','=','embedded')]"/>
+                <group expand="0" string="Kelompok">
+                    <filter string="Perikop" name="group_pericope" context="{'group_by': 'pericope_id'}"/>
+                    <filter string="Status" name="group_state" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="view_rag_verse_form" model="ir.ui.view">
+        <field name="name">rag.verse.form</field>
+        <field name="model">rag.verse</field>
+        <field name="arch" type="xml">
+            <form string="Ayat">
+                <header>
+                    <button name="action_reembed_chunks" type="object" string="Re-embed Chunk"
+                            groups="rag_teologi.group_rag_manager"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,chunked,embedded"/>
+                </header>
+                <sheet>
+                    <div class="oe_title"><h1><field name="ref_label"/></h1></div>
+                    <group>
+                        <group>
+                            <field name="book_id"/>
+                            <field name="pericope_id"/>
+                            <field name="chapter"/>
+                            <field name="verse_no"/>
+                        </group>
+                        <group>
+                            <field name="word_count"/>
+                            <field name="variant_count"/>
+                            <field name="dirty"/>
+                            <field name="paragraph_start"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Yunani" name="yunani">
+                            <group>
+                                <field name="greek_accented" class="text-monospace"/>
+                                <field name="greek_stripped" class="text-monospace"/>
+                                <field name="transliteration"/>
+                            </group>
+                        </page>
+                        <page string="KJV" name="kjv"><field name="kjv"/><field name="kjv_raw" readonly="1"/></page>
+                        <page string="Indonesia" name="ind">
+                            <group><field name="ind"/><field name="ind_source"/></group>
+                        </page>
+                        <page string="Morfologi" name="morfologi"><field name="words" readonly="1"/></page>
+                        <page string="Varian" name="varian">
+                            <field name="variant_ids">
+                                <list editable="bottom">
+                                    <field name="seq"/>
+                                    <field name="clause_ref"/>
+                                    <field name="witness_id"/>
+                                    <field name="variant_type_id"/>
+                                    <field name="byz_text"/>
+                                    <field name="other_text"/>
+                                    <field name="is_significant"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Chunk" name="chunk">
+                            <field name="chunk_ids">
+                                <list>
+                                    <field name="label"/>
+                                    <field name="chunk_kind_id"/>
+                                    <field name="state"/>
+                                    <field name="dirty"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_rag_verse" model="ir.actions.act_window">
+        <field name="name">Ayat</field>
+        <field name="res_model">rag.verse</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_rag_verse_search"/>
+    </record>
+
+    <!-- ===================== CHUNK ===================== -->
+    <record id="view_rag_chunk_list" model="ir.ui.view">
+        <field name="name">rag.chunk.list</field>
+        <field name="model">rag.chunk</field>
+        <field name="arch" type="xml">
+            <list string="Chunk">
+                <field name="label"/>
+                <field name="chunk_kind_id"/>
+                <field name="embedding_model_id"/>
+                <field name="state" widget="badge"
+                       decoration-success="state == 'embedded'"
+                       decoration-danger="state == 'error'"/>
+                <field name="dirty" widget="boolean_toggle"/>
+                <field name="embedded_at"/>
+                <button name="action_reembed" type="object" icon="fa-refresh"
+                        title="Re-embed" groups="rag_teologi.group_rag_manager"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_rag_chunk_form" model="ir.ui.view">
+        <field name="name">rag.chunk.form</field>
+        <field name="model">rag.chunk</field>
+        <field name="arch" type="xml">
+            <form string="Chunk">
+                <header>
+                    <button name="action_reembed" type="object" string="Re-embed"
+                            class="btn-primary" groups="rag_teologi.group_rag_manager"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="verse_id"/>
+                            <field name="chunk_kind_id"/>
+                            <field name="embedding_model_id"/>
+                        </group>
+                        <group>
+                            <field name="dirty"/>
+                            <field name="retry_count"/>
+                            <field name="embedded_at"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Teks untuk Embedding" name="embed">
+                            <field name="embed_text"/>
+                            <field name="embed_hash" readonly="1"/>
+                            <field name="token_est"/>
+                        </page>
+                        <page string="Teks Terindeks" name="fts">
+                            <group>
+                                <field name="lai_text"/>
+                                <field name="kjv_text"/>
+                                <field name="greek_stripped"/>
+                                <field name="lexeme_text"/>
+                            </group>
+                        </page>
+                        <page string="Galat" name="error">
+                            <field name="last_error" readonly="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_rag_chunk" model="ir.actions.act_window">
+        <field name="name">Chunk</field>
+        <field name="res_model">rag.chunk</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- ===================== VARIAN ===================== -->
+    <record id="view_rag_variant_list" model="ir.ui.view">
+        <field name="name">rag.variant.list</field>
+        <field name="model">rag.variant</field>
+        <field name="arch" type="xml">
+            <list string="Varian Tekstual" editable="bottom">
+                <field name="verse_id"/>
+                <field name="seq"/>
+                <field name="witness_id"/>
+                <field name="variant_type_id"/>
+                <field name="byz_text"/>
+                <field name="other_text"/>
+                <field name="is_significant"/>
+            </list>
+        </field>
+    </record>
+    <record id="action_rag_variant" model="ir.actions.act_window">
+        <field name="name">Varian Tekstual</field>
+        <field name="res_model">rag.variant</field>
+        <field name="view_mode">list</field>
+    </record>
+
+</odoo>

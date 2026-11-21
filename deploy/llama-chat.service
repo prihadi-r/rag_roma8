@@ -1,0 +1,27 @@
+[Unit]
+Description=llama.cpp chat server (Qwen2.5-7B-Instruct Q4_K_M) untuk RAG Roma 8
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=nms
+WorkingDirectory=/home/nms/llama.cpp
+ExecStart=/home/nms/llama.cpp/build/bin/llama-server \
+  --model /home/nms/llama.cpp/models/Qwen2.5-7B-Instruct-Q4_K_M.gguf \
+  --alias qwen2.5-7b-instruct \
+  --host 127.0.0.1 \
+  --port 8081 \
+  --ctx-size 8192 \
+  --cache-type-k q8_0 \
+  --cache-type-v q8_0 \
+  --flash-attn on \
+  --threads 8 \
+  --jinja \
+  --no-webui \
+  --log-colors off
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

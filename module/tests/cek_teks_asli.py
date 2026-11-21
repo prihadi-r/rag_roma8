@@ -1,0 +1,7 @@
+log = env['rag.query.log'].browse(27)
+print("pertanyaan:", log.question)
+print("ayat dikutip (terdeteksi):", log.cited_verse_ids.mapped('ref_label'))
+print("ayat terambil:", [h.chunk_id.verse_id.ref_label for h in log.hit_ids if h.injected])
+print()
+print("=== isi tab 'Teks Asli (Yunani)' ===")
+print(log.greek_quotes)

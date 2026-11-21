@@ -1,0 +1,13 @@
+print("=== chunking ulang (uji idempotensi & hash) ===")
+v = env['rag.verse'].search([('chapter','=',8),('verse_no','=',1)], limit=1)
+c = v.chunk_ids[:1]
+lama = (c.embed_hash, len(c.embed_text or ''))
+stat = env['rag.chunker'].run(hanya_kotor=False)
+env.cr.commit()
+c.invalidate_recordset()
+print("chunk total:", env['rag.chunk'].search_count([]), "| diproses:", stat['chunk'], "| gagal:", stat['gagal'])
+print("hash lama:", lama[0][:16], "panjang", lama[1])
+print("hash baru:", c.embed_hash[:16], "panjang", len(c.embed_text))
+print("chunk ganda?", env['rag.chunk'].search_count([('verse_id','=',v.id)]))
+print()
+print(c.embed_text)

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_rag_config_list" model="ir.ui.view">
+        <field name="name">rag.config.list</field>
+        <field name="model">rag.config</field>
+        <field name="arch" type="xml">
+            <list string="Konfigurasi RAG">
+                <field name="name"/>
+                <field name="chat_model"/>
+                <field name="embedding_model_id"/>
+                <field name="rrf_k"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_rag_config_form" model="ir.ui.view">
+        <field name="name">rag.config.form</field>
+        <field name="model">rag.config</field>
+        <field name="arch" type="xml">
+            <form string="Konfigurasi RAG">
+                <sheet>
+                    <div class="oe_title"><h1><field name="name"/></h1></div>
+                    <group>
+                        <group string="Chat Completion">
+                            <field name="chat_base_url"/>
+                            <field name="chat_model"/>
+                            <field name="temperature"/>
+                            <field name="max_tokens"/>
+                            <field name="timeout_chat_s"/>
+                        </group>
+                        <group string="Embedding">
+                            <field name="embed_base_url"/>
+                            <field name="embedding_model_id"/>
+                            <field name="timeout_embed_s"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Retrieval">
+                            <field name="top_k_dense"/>
+                            <field name="top_k_fts"/>
+                            <field name="rrf_k"/>
+                            <field name="top_k_final"/>
+                        </group>
+                        <group string="Konteks &amp; Prompt">
+                            <field name="context_budget_chars"/>
+                            <field name="prompt_template_id"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_rag_config" model="ir.actions.act_window">
+        <field name="name">Konfigurasi</field>
+        <field name="res_model">rag.config</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="view_rag_embedding_model_list" model="ir.ui.view">
+        <field name="name">rag.embedding.model.list</field>
+        <field name="model">rag.embedding.model</field>
+        <field name="arch" type="xml">
+            <list string="Model Embedding">
+                <field name="name"/><field name="endpoint"/><field name="dimensions"/>
+                <field name="quantization"/><field name="active"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_rag_embedding_model_form" model="ir.ui.view">
+        <field name="name">rag.embedding.model.form</field>
+        <field name="model">rag.embedding.model</field>
+        <field name="arch" type="xml">
+            <form string="Model Embedding">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/><field name="provider"/>
+                            <field name="endpoint"/><field name="dimensions"/>
+                        </group>
+                        <group>
+                            <field name="quantization"/><field name="normalized"/><field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_rag_embedding_model" model="ir.actions.act_window">
+        <field name="name">Model Embedding</field>
+        <field name="res_model">rag.embedding.model</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="view_rag_prompt_template_list" model="ir.ui.view">
+        <field name="name">rag.prompt.template.list</field>
+        <field name="model">rag.prompt.template</field>
+        <field name="arch" type="xml">
+            <list string="Templat Prompt">
+                <field name="name"/><field name="role"/><field name="version"/><field name="active"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_rag_prompt_template_form" model="ir.ui.view">
+        <field name="name">rag.prompt.template.form</field>
+        <field name="model">rag.prompt.template</field>
+        <field name="arch" type="xml">
+            <form string="Templat Prompt">
+                <sheet>
+                    <group>
+                        <group><field name="name"/><field name="role"/></group>
+                        <group><field name="version"/><field name="active"/></group>
+                    </group>
+                    <field name="body" placeholder="Placeholder: {{context}}, {{variants}}"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_rag_prompt_template" model="ir.actions.act_window">
+        <field name="name">Templat Prompt</field>
+        <field name="res_model">rag.prompt.template</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

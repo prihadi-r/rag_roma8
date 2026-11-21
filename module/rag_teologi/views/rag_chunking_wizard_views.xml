@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_rag_chunking_wizard_form" model="ir.ui.view">
+        <field name="name">rag.chunking.wizard.form</field>
+        <field name="model">rag.chunking.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Jalankan Chunking">
+                <group>
+                    <field name="hanya_kotor"/>
+                </group>
+                <div class="alert alert-info" role="alert">
+                    Chunking menyusun unit pencarian per ayat dan menghitung
+                    <b>embed_text</b>. Vektor <b>belum</b> dibuat — itu Fase 6.
+                </div>
+                <field name="hasil" invisible="not hasil"/>
+                <footer>
+                    <button name="action_run" type="object" string="Jalankan" class="btn-primary"
+                            icon="fa-cogs"/>
+                    <button string="Tutup" special="cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_rag_chunking_wizard" model="ir.actions.act_window">
+        <field name="name">Jalankan Chunking</field>
+        <field name="res_model">rag.chunking.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

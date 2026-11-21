@@ -1,0 +1,5076 @@
+{
+  "meta": {
+    "kitab": "Roma",
+    "pasal": 8,
+    "ayat": 39,
+    "sumber": {
+      "yunani": {
+        "edisi": "Robinson-Pierpont 2018 (Byzantine Textform)",
+        "repo": "https://github.com/byztxt/byzantine-majority-text",
+        "lisensi": "Public Domain",
+        "berkas": [
+          "ROM_accented.csv",
+          "ROM_strongs.csv",
+          "ROM_variants.csv"
+        ]
+      },
+      "inggris": {
+        "edisi": "King James Version 1769",
+        "url": "https://ebible.org/Scriptures/eng-kjv_vpl.zip",
+        "lisensi": "Public Domain (di luar Inggris)"
+      },
+      "indonesia": {
+        "edisi": "AYT — Alkitab Yang Terbuka",
+        "url": "https://ebible.org/Scriptures/indayt_vpl.zip",
+        "lisensi": "CC BY-ND 4.0 — Yayasan Lembaga SABDA",
+        "catatan": "Pengganti TB/LAI yang belum memperoleh kunci API. Atribusi wajib dipertahankan."
+      }
+    }
+  },
+  "ayat": [
+    {
+      "ref": "Roma 8:1",
+      "chapter": 8,
+      "verse": 1,
+      "pericope": {
+        "range": "8:1-11",
+        "title_id": "Hidup oleh Roh",
+        "title_en": "Life in the Spirit"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Οὐδὲν ἄρα νῦν κατάκριμα τοῖς ἐν χριστῷ Ἰησοῦ, μὴ κατὰ σάρκα περιπατοῦσιν, ἀλλὰ κατὰ πνεῦμα.",
+      "greek_stripped": "ουδεν αρα νυν κατακριμα τοις εν χριστω ιησου μη κατα σαρκα περιπατουσιν αλλα κατα πνευμα",
+      "transliteration": "ouden ara nyn katakrima tois en christō iēsou mē kata sarka peripatousin alla kata pneuma",
+      "words": [
+        {
+          "surface": "ουδεν",
+          "strongs": "3762",
+          "morph": "A-NSN-N",
+          "alt": []
+        },
+        {
+          "surface": "αρα",
+          "strongs": "686",
+          "morph": "PRT",
+          "alt": []
+        },
+        {
+          "surface": "νυν",
+          "strongs": "3568",
+          "morph": "ADV",
+          "alt": []
+        },
+        {
+          "surface": "κατακριμα",
+          "strongs": "2631",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "τοις",
+          "strongs": "3588",
+          "morph": "T-DPM",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "χριστω",
+          "strongs": "5547",
+          "morph": "N-DSM",
+          "alt": []
+        },
+        {
+          "surface": "ιησου",
+          "strongs": "2424",
+          "morph": "N-DSM",
+          "alt": []
+        },
+        {
+          "surface": "μη",
+          "strongs": "3361",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "κατα",
+          "strongs": "2596",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "σαρκα",
+          "strongs": "4561",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "περιπατουσιν",
+          "strongs": "4043",
+          "morph": "V-PAP-DPM",
+          "alt": []
+        },
+        {
+          "surface": "αλλα",
+          "strongs": "235",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "κατα",
+          "strongs": "2596",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-ASN",
+          "alt": []
+        }
+      ],
+      "word_count": 15,
+      "kjv": "There is therefore now no condemnation to them which are in Christ Jesus, who walk not after the flesh, but after the Spirit.",
+      "kjv_raw": "[There is] therefore now no condemnation to them which are in Christ Jesus, who walk not after the flesh, but after the Spirit.",
+      "ind": "Karena itu, sekarang tidak ada lagi penghukuman bagi orang yang ada dalam Yesus Kristus.",
+      "variants": [
+        {
+          "verse": 1,
+          "seq": 1,
+          "witness": "NA",
+          "type": "omission",
+          "byz_text": "μὴ κατὰ σάρκα περιπατοῦσιν ἀλλὰ κατὰ πνεῦμα",
+          "other_text": "-",
+          "apparatus_note": "{NA μὴ κατὰ σάρκα περιπατοῦσιν ἀλλὰ κατὰ πνεῦμα > - }"
+        }
+      ],
+      "content_hash": "2b0ec792a22223cb50ce77da38ff7e568c7640e036e269bc9b7c688c38e99de5"
+    },
+    {
+      "ref": "Roma 8:2",
+      "chapter": 8,
+      "verse": 2,
+      "pericope": {
+        "range": "8:1-11",
+        "title_id": "Hidup oleh Roh",
+        "title_en": "Life in the Spirit"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Ὁ γὰρ νόμος τοῦ πνεύματος τῆς ζωῆς ἐν χριστῷ Ἰησοῦ ἠλευθέρωσέν με ἀπὸ τοῦ νόμου τῆς ἁμαρτίας καὶ τοῦ θανάτου.",
+      "greek_stripped": "ο γαρ νομος του πνευματος της ζωης εν χριστω ιησου ηλευθερωσεν με απο του νομου της αμαρτιας και του θανατου",
+      "transliteration": "o gar nomos tou pneumatos tēs zōēs en christō iēsou ēleutherōsen me apo tou nomou tēs amartias kai tou thanatou",
+      "words": [
+        {
+          "surface": "ο",
+          "strongs": "3588",
+          "morph": "T-NSM",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "νομος",
+          "strongs": "3551",
+          "morph": "N-NSM",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSN",
+          "alt": []
+        },
+        {
+          "surface": "πνευματος",
+          "strongs": "4151",
+          "morph": "N-GSN",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "ζωης",
+          "strongs": "2222",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "χριστω",
+          "strongs": "5547",
+          "morph": "N-DSM",
+          "alt": []
+        },
+        {
+          "surface": "ιησου",
+          "strongs": "2424",
+          "morph": "N-DSM",
+          "alt": []
+        },
+        {
+          "surface": "ηλευθερωσεν",
+          "strongs": "1659",
+          "morph": "V-AAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "με",
+          "strongs": "1473",
+          "morph": "P-1AS",
+          "alt": []
+        },
+        {
+          "surface": "απο",
+          "strongs": "575",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "νομου",
+          "strongs": "3551",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "αμαρτιας",
+          "strongs": "266",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "θανατου",
+          "strongs": "2288",
+          "morph": "N-GSM",
+          "alt": []
+        }
+      ],
+      "word_count": 20,
+      "kjv": "For the law of the Spirit of life in Christ Jesus hath made me free from the law of sin and death.",
+      "kjv_raw": "For the law of the Spirit of life in Christ Jesus hath made me free from the law of sin and death.",
+      "ind": "Sebab, hukum Roh kehidupan dalam Yesus Kristus telah memerdekakan kamu dari hukum dosa dan maut.",
+      "variants": [
+        {
+          "verse": 2,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "με",
+          "other_text": "σε",
+          "apparatus_note": "{NA με > σε }"
+        }
+      ],
+      "content_hash": "c115244a54cff4c5bc75ce863cd54cc79194c13edc96874443521c8602f51ce0"
+    },
+    {
+      "ref": "Roma 8:3",
+      "chapter": 8,
+      "verse": 3,
+      "pericope": {
+        "range": "8:1-11",
+        "title_id": "Hidup oleh Roh",
+        "title_en": "Life in the Spirit"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Τὸ γὰρ ἀδύνατον τοῦ νόμου, ἐν ᾧ ἠσθένει διὰ τῆς σαρκός, ὁ θεὸς τὸν ἑαυτοῦ υἱὸν πέμψας ἐν ὁμοιώματι σαρκὸς ἁμαρτίας καὶ περὶ ἁμαρτίας κατέκρινεν τὴν ἁμαρτίαν ἐν τῇ σαρκί·",
+      "greek_stripped": "το γαρ αδυνατον του νομου εν ω ησθενει δια της σαρκος ο θεος τον εαυτου υιον πεμψας εν ομοιωματι σαρκος αμαρτιας και περι αμαρτιας κατεκρινεν την αμαρτιαν εν τη σαρκι",
+      "transliteration": "to gar adynaton tou nomou en ō ēsthenei dia tēs sarkos o theos ton eautou uion pempsas en omoiōmati sarkos amartias kai peri amartias katekrinen tēn amartian en tē sarki",
+      "words": [
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-ASN",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "αδυνατον",
+          "strongs": "102",
+          "morph": "A-ASN",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "νομου",
+          "strongs": "3551",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "ω",
+          "strongs": "3739",
+          "morph": "R-DSN",
+          "alt": []
+        },
+        {
+          "surface": "ησθενει",
+          "strongs": "770",
+          "morph": "V-IAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "δια",
+          "strongs": "1223",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "σαρκος",
+          "strongs": "4561",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "ο",
+          "strongs": "3588",
+          "morph": "T-NSM",
+          "alt": []
+        },
+        {
+          "surface": "θεος",
+          "strongs": "2316",
+          "morph": "N-NSM",
+          "alt": []
+        },
+        {
+          "surface": "τον",
+          "strongs": "3588",
+          "morph": "T-ASM",
+          "alt": []
+        },
+        {
+          "surface": "εαυτου",
+          "strongs": "1438",
+          "morph": "F-3GSM",
+          "alt": []
+        },
+        {
+          "surface": "υιον",
+          "strongs": "5207",
+          "morph": "N-ASM",
+          "alt": []
+        },
+        {
+          "surface": "πεμψας",
+          "strongs": "3992",
+          "morph": "V-AAP-NSM",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "ομοιωματι",
+          "strongs": "3667",
+          "morph": "N-DSN",
+          "alt": []
+        },
+        {
+          "surface": "σαρκος",
+          "strongs": "4561",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "αμαρτιας",
+          "strongs": "266",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "περι",
+          "strongs": "4012",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "αμαρτιας",
+          "strongs": "266",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "κατεκρινεν",
+          "strongs": "2632",
+          "morph": "V-AAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "την",
+          "strongs": "3588",
+          "morph": "T-ASF",
+          "alt": []
+        },
+        {
+          "surface": "αμαρτιαν",
+          "strongs": "266",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "τη",
+          "strongs": "3588",
+          "morph": "T-DSF",
+          "alt": []
+        },
+        {
+          "surface": "σαρκι",
+          "strongs": "4561",
+          "morph": "N-DSF",
+          "alt": []
+        }
+      ],
+      "word_count": 30,
+      "kjv": "For what the law could not do, in that it was weak through the flesh, God sending his own Son in the likeness of sinful flesh, and for sin, condemned sin in the flesh:",
+      "kjv_raw": "For what the law could not do, in that it was weak through the flesh, God sending his own Son in the likeness of sinful flesh, and for sin, condemned sin in the flesh:",
+      "ind": "Sebab, Allah telah melakukan apa yang tidak dapat dilakukan oleh Hukum Taurat karena dilemahkan oleh daging. Dengan mengutus Anak-Nya sendiri dalam keserupaan dengan tubuh jasmani yang berdosa dan untuk dosa, Ia menghukum dosa dalam daging,",
+      "variants": [],
+      "content_hash": "bdd2a07736a7cfb65c0fd7f11a34e2596b722f556de0544f6b09d7778ddb0357"
+    },
+    {
+      "ref": "Roma 8:4",
+      "chapter": 8,
+      "verse": 4,
+      "pericope": {
+        "range": "8:1-11",
+        "title_id": "Hidup oleh Roh",
+        "title_en": "Life in the Spirit"
+      },
+      "paragraph_start": false,
+      "greek_accented": "ἵνα τὸ δικαίωμα τοῦ νόμου πληρωθῇ ἐν ἡμῖν, τοῖς μὴ κατὰ σάρκα περιπατοῦσιν, ἀλλὰ κατὰ πνεῦμα.",
+      "greek_stripped": "ινα το δικαιωμα του νομου πληρωθη εν ημιν τοις μη κατα σαρκα περιπατουσιν αλλα κατα πνευμα",
+      "transliteration": "ina to dikaiōma tou nomou plērōthē en ēmin tois mē kata sarka peripatousin alla kata pneuma",
+      "words": [
+        {
+          "surface": "ινα",
+          "strongs": "2443",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-NSN",
+          "alt": []
+        },
+        {
+          "surface": "δικαιωμα",
+          "strongs": "1345",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "νομου",
+          "strongs": "3551",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "πληρωθη",
+          "strongs": "4137",
+          "morph": "V-APS-3S",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "ημιν",
+          "strongs": "1473",
+          "morph": "P-1DP",
+          "alt": []
+        },
+        {
+          "surface": "τοις",
+          "strongs": "3588",
+          "morph": "T-DPM",
+          "alt": []
+        },
+        {
+          "surface": "μη",
+          "strongs": "3361",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "κατα",
+          "strongs": "2596",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "σαρκα",
+          "strongs": "4561",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "περιπατουσιν",
+          "strongs": "4043",
+          "morph": "V-PAP-DPM",
+          "alt": []
+        },
+        {
+          "surface": "αλλα",
+          "strongs": "235",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "κατα",
+          "strongs": "2596",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-ASN",
+          "alt": []
+        }
+      ],
+      "word_count": 16,
+      "kjv": "That the righteousness of the law might be fulfilled in us, who walk not after the flesh, but after the Spirit.",
+      "kjv_raw": "That the righteousness of the law might be fulfilled in us, who walk not after the flesh, but after the Spirit.",
+      "ind": "supaya tuntutan Hukum Taurat yang benar digenapi dalam kita yang tidak hidup menurut daging, melainkan menurut Roh.",
+      "variants": [],
+      "content_hash": "43f26e82f3fbd2330a12df7c8e1b16c040b5b13f30351d068160a0d2ea331285"
+    },
+    {
+      "ref": "Roma 8:5",
+      "chapter": 8,
+      "verse": 5,
+      "pericope": {
+        "range": "8:1-11",
+        "title_id": "Hidup oleh Roh",
+        "title_en": "Life in the Spirit"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Οἱ γὰρ κατὰ σάρκα ὄντες τὰ τῆς σαρκὸς φρονοῦσιν· οἱ δὲ κατὰ πνεῦμα τὰ τοῦ πνεύματος.",
+      "greek_stripped": "οι γαρ κατα σαρκα οντες τα της σαρκος φρονουσιν οι δε κατα πνευμα τα του πνευματος",
+      "transliteration": "oi gar kata sarka ontes ta tēs sarkos phronousin oi de kata pneuma ta tou pneumatos",
+      "words": [
+        {
+          "surface": "οι",
+          "strongs": "3588",
+          "morph": "T-NPM",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "κατα",
+          "strongs": "2596",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "σαρκα",
+          "strongs": "4561",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "οντες",
+          "strongs": "1510",
+          "morph": "V-PAP-NPM",
+          "alt": []
+        },
+        {
+          "surface": "τα",
+          "strongs": "3588",
+          "morph": "T-APN",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "σαρκος",
+          "strongs": "4561",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "φρονουσιν",
+          "strongs": "5426",
+          "morph": "V-PAI-3P",
+          "alt": []
+        },
+        {
+          "surface": "οι",
+          "strongs": "3588",
+          "morph": "T-NPM",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "κατα",
+          "strongs": "2596",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-ASN",
+          "alt": []
+        },
+        {
+          "surface": "τα",
+          "strongs": "3588",
+          "morph": "T-APN",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSN",
+          "alt": []
+        },
+        {
+          "surface": "πνευματος",
+          "strongs": "4151",
+          "morph": "N-GSN",
+          "alt": []
+        }
+      ],
+      "word_count": 16,
+      "kjv": "For they that are after the flesh do mind the things of the flesh; but they that are after the Spirit the things of the Spirit.",
+      "kjv_raw": "For they that are after the flesh do mind the things of the flesh; but they that are after the Spirit the things of the Spirit.",
+      "ind": "Karena mereka yang hidup menurut daging, memikirkan hal-hal yang bersifat daging, tetapi mereka yang hidup menurut Roh, memikirkan hal-hal yang bersifat Roh.",
+      "variants": [],
+      "content_hash": "ae8a78f9151a8a4642f8bedd4f6e4bf91e1c0f7d056b8c97c745d5eaee21b799"
+    },
+    {
+      "ref": "Roma 8:6",
+      "chapter": 8,
+      "verse": 6,
+      "pericope": {
+        "range": "8:1-11",
+        "title_id": "Hidup oleh Roh",
+        "title_en": "Life in the Spirit"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Τὸ γὰρ φρόνημα τῆς σαρκὸς θάνατος· τὸ δὲ φρόνημα τοῦ πνεύματος ζωὴ καὶ εἰρήνη·",
+      "greek_stripped": "το γαρ φρονημα της σαρκος θανατος το δε φρονημα του πνευματος ζωη και ειρηνη",
+      "transliteration": "to gar phronēma tēs sarkos thanatos to de phronēma tou pneumatos zōē kai eirēnē",
+      "words": [
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-NSN",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "φρονημα",
+          "strongs": "5427",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "σαρκος",
+          "strongs": "4561",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "θανατος",
+          "strongs": "2288",
+          "morph": "N-NSM",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-NSN",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "φρονημα",
+          "strongs": "5427",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSN",
+          "alt": []
+        },
+        {
+          "surface": "πνευματος",
+          "strongs": "4151",
+          "morph": "N-GSN",
+          "alt": []
+        },
+        {
+          "surface": "ζωη",
+          "strongs": "2222",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ειρηνη",
+          "strongs": "1515",
+          "morph": "N-NSF",
+          "alt": []
+        }
+      ],
+      "word_count": 14,
+      "kjv": "For to be carnally minded is death; but to be spiritually minded is life and peace.",
+      "kjv_raw": "For to be carnally minded [is] death; but to be spiritually minded [is] life and peace.",
+      "ind": "Untuk menaruh pikiran pada daging adalah maut, tetapi menaruh pikiran pada Roh adalah hidup dan damai sejahtera.",
+      "variants": [],
+      "content_hash": "765906c07304bc353a32337ddfa834fa409b843f1ec208f34dce1994f80495bb"
+    },
+    {
+      "ref": "Roma 8:7",
+      "chapter": 8,
+      "verse": 7,
+      "pericope": {
+        "range": "8:1-11",
+        "title_id": "Hidup oleh Roh",
+        "title_en": "Life in the Spirit"
+      },
+      "paragraph_start": false,
+      "greek_accented": "διότι τὸ φρόνημα τῆς σαρκὸς ἔχθρα εἰς θεόν, τῷ γὰρ νόμῳ τοῦ θεοῦ οὐχ ὑποτάσσεται, οὐδὲ γὰρ δύναται·",
+      "greek_stripped": "διοτι το φρονημα της σαρκος εχθρα εις θεον τω γαρ νομω του θεου ουχ υποτασσεται ουδε γαρ δυναται",
+      "transliteration": "dioti to phronēma tēs sarkos echthra eis theon tō gar nomō tou theou ouch ypotassetai oude gar dynatai",
+      "words": [
+        {
+          "surface": "διοτι",
+          "strongs": "1360",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-NSN",
+          "alt": []
+        },
+        {
+          "surface": "φρονημα",
+          "strongs": "5427",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "σαρκος",
+          "strongs": "4561",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "εχθρα",
+          "strongs": "2189",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "εις",
+          "strongs": "1519",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "θεον",
+          "strongs": "2316",
+          "morph": "N-ASM",
+          "alt": []
+        },
+        {
+          "surface": "τω",
+          "strongs": "3588",
+          "morph": "T-DSM",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "νομω",
+          "strongs": "3551",
+          "morph": "N-DSM",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "θεου",
+          "strongs": "2316",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "ουχ",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "υποτασσεται",
+          "strongs": "5293",
+          "morph": "V-PPI-3S",
+          "alt": []
+        },
+        {
+          "surface": "ουδε",
+          "strongs": "3761",
+          "morph": "CONJ-N",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "δυναται",
+          "strongs": "1410",
+          "morph": "V-PNI-3S",
+          "alt": []
+        }
+      ],
+      "word_count": 18,
+      "kjv": "Because the carnal mind is enmity against God: for it is not subject to the law of God, neither indeed can be.",
+      "kjv_raw": "Because the carnal mind [is] enmity against God: for it is not subject to the law of God, neither indeed can be.",
+      "ind": "Sebab, menaruh pikiran pada hal-hal daging berarti melawan Allah; sebab hal itu tidak tunduk kepada Hukum Allah, itu tidak bisa.",
+      "variants": [],
+      "content_hash": "e64fbadb8e06e32d5378d2427244f6637628c5c009ed32f4e95af13f5b92bf8b"
+    },
+    {
+      "ref": "Roma 8:8",
+      "chapter": 8,
+      "verse": 8,
+      "pericope": {
+        "range": "8:1-11",
+        "title_id": "Hidup oleh Roh",
+        "title_en": "Life in the Spirit"
+      },
+      "paragraph_start": false,
+      "greek_accented": "οἱ δὲ ἐν σαρκὶ ὄντες θεῷ ἀρέσαι οὐ δύνανται.",
+      "greek_stripped": "οι δε εν σαρκι οντες θεω αρεσαι ου δυνανται",
+      "transliteration": "oi de en sarki ontes theō aresai ou dynantai",
+      "words": [
+        {
+          "surface": "οι",
+          "strongs": "3588",
+          "morph": "T-NPM",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "σαρκι",
+          "strongs": "4561",
+          "morph": "N-DSF",
+          "alt": []
+        },
+        {
+          "surface": "οντες",
+          "strongs": "1510",
+          "morph": "V-PAP-NPM",
+          "alt": []
+        },
+        {
+          "surface": "θεω",
+          "strongs": "2316",
+          "morph": "N-DSM",
+          "alt": []
+        },
+        {
+          "surface": "αρεσαι",
+          "strongs": "700",
+          "morph": "V-AAN",
+          "alt": []
+        },
+        {
+          "surface": "ου",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "δυνανται",
+          "strongs": "1410",
+          "morph": "V-PNI-3P",
+          "alt": []
+        }
+      ],
+      "word_count": 9,
+      "kjv": "So then they that are in the flesh cannot please God.",
+      "kjv_raw": "So then they that are in the flesh cannot please God.",
+      "ind": "Siapa yang ada dalam daging tidak dapat menyenangkan Allah.",
+      "variants": [],
+      "content_hash": "83542d3e8e7b41fc53eff3783983a9395619e4659c05aa8105ec0f88d658b84a"
+    },
+    {
+      "ref": "Roma 8:9",
+      "chapter": 8,
+      "verse": 9,
+      "pericope": {
+        "range": "8:1-11",
+        "title_id": "Hidup oleh Roh",
+        "title_en": "Life in the Spirit"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Ὑμεῖς δὲ οὐκ ἐστὲ ἐν σαρκί, ἀλλ’ ἐν πνεύματι, εἴπερ πνεῦμα θεοῦ οἰκεῖ ἐν ὑμῖν. Εἰ δέ τις πνεῦμα χριστοῦ οὐκ ἔχει, οὗτος οὐκ ἔστιν αὐτοῦ.",
+      "greek_stripped": "υμεις δε ουκ εστε εν σαρκι αλλ εν πνευματι ειπερ πνευμα θεου οικει εν υμιν ει δε τις πνευμα χριστου ουκ εχει ουτος ουκ εστιν αυτου",
+      "transliteration": "ymeis de ouk este en sarki all en pneumati eiper pneuma theou oikei en ymin ei de tis pneuma christou ouk echei outos ouk estin autou",
+      "words": [
+        {
+          "surface": "υμεις",
+          "strongs": "4771",
+          "morph": "P-2NP",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ουκ",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "εστε",
+          "strongs": "1510",
+          "morph": "V-PAI-2P",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "σαρκι",
+          "strongs": "4561",
+          "morph": "N-DSF",
+          "alt": []
+        },
+        {
+          "surface": "αλλ",
+          "strongs": "235",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "πνευματι",
+          "strongs": "4151",
+          "morph": "N-DSN",
+          "alt": []
+        },
+        {
+          "surface": "ειπερ",
+          "strongs": "1512",
+          "morph": "COND",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "θεου",
+          "strongs": "2316",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "οικει",
+          "strongs": "3611",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "υμιν",
+          "strongs": "4771",
+          "morph": "P-2DP",
+          "alt": []
+        },
+        {
+          "surface": "ει",
+          "strongs": "1487",
+          "morph": "COND",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "τις",
+          "strongs": "5100",
+          "morph": "X-NSM",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-ASN",
+          "alt": []
+        },
+        {
+          "surface": "χριστου",
+          "strongs": "5547",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "ουκ",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "εχει",
+          "strongs": "2192",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "ουτος",
+          "strongs": "3778",
+          "morph": "D-NSM",
+          "alt": []
+        },
+        {
+          "surface": "ουκ",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "εστιν",
+          "strongs": "1510",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "αυτου",
+          "strongs": "846",
+          "morph": "P-GSM",
+          "alt": []
+        }
+      ],
+      "word_count": 26,
+      "kjv": "But ye are not in the flesh, but in the Spirit, if so be that the Spirit of God dwell in you. Now if any man have not the Spirit of Christ, he is none of his.",
+      "kjv_raw": "But ye are not in the flesh, but in the Spirit, if so be that the Spirit of God dwell in you. Now if any man have not the Spirit of Christ, he is none of his.",
+      "ind": "Namun demikian, kamu tidak hidup dalam daging, melainkan dalam Roh, jika Roh Allah memang hidup dalam kamu. Siapa tidak memiliki Roh Kristus, ia bukan milik-Nya.",
+      "variants": [
+        {
+          "verse": 9,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "ἀλλ’",
+          "other_text": "ἀλλὰ",
+          "apparatus_note": "{NA ἀλλ’ > ἀλλὰ }"
+        }
+      ],
+      "content_hash": "a6e434646a160608540a1e9c3965bb009a20b01bbc0a2a2d92bcd20eb839ef2c"
+    },
+    {
+      "ref": "Roma 8:10",
+      "chapter": 8,
+      "verse": 10,
+      "pericope": {
+        "range": "8:1-11",
+        "title_id": "Hidup oleh Roh",
+        "title_en": "Life in the Spirit"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Εἰ δὲ χριστὸς ἐν ὑμῖν, τὸ μὲν σῶμα νεκρὸν διὰ ἁμαρτίαν, τὸ δὲ πνεῦμα ζωὴ διὰ δικαιοσύνην.",
+      "greek_stripped": "ει δε χριστος εν υμιν το μεν σωμα νεκρον δια αμαρτιαν το δε πνευμα ζωη δια δικαιοσυνην",
+      "transliteration": "ei de christos en ymin to men sōma nekron dia amartian to de pneuma zōē dia dikaiosynēn",
+      "words": [
+        {
+          "surface": "ει",
+          "strongs": "1487",
+          "morph": "COND",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "χριστος",
+          "strongs": "5547",
+          "morph": "N-NSM",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "υμιν",
+          "strongs": "4771",
+          "morph": "P-2DP",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-NSN",
+          "alt": []
+        },
+        {
+          "surface": "μεν",
+          "strongs": "3303",
+          "morph": "PRT",
+          "alt": []
+        },
+        {
+          "surface": "σωμα",
+          "strongs": "4983",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "νεκρον",
+          "strongs": "3498",
+          "morph": "A-NSN",
+          "alt": []
+        },
+        {
+          "surface": "δια",
+          "strongs": "1223",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "αμαρτιαν",
+          "strongs": "266",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-NSN",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "ζωη",
+          "strongs": "2222",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "δια",
+          "strongs": "1223",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "δικαιοσυνην",
+          "strongs": "1343",
+          "morph": "N-ASF",
+          "alt": []
+        }
+      ],
+      "word_count": 17,
+      "kjv": "And if Christ be in you, the body is dead because of sin; but the Spirit is life because of righteousness.",
+      "kjv_raw": "And if Christ [be] in you, the body [is] dead because of sin; but the Spirit [is] life because of righteousness.",
+      "ind": "Akan tetapi, jika Kristus ada dalam kamu, walaupun tubuhmu mati karena dosa, Roh hidup oleh karena kebenaran.",
+      "variants": [],
+      "content_hash": "cb5658f7e24dd0dc8e28f67063fe7978960d14423b315fc6f6b89a5cae7b5dac"
+    },
+    {
+      "ref": "Roma 8:11",
+      "chapter": 8,
+      "verse": 11,
+      "pericope": {
+        "range": "8:1-11",
+        "title_id": "Hidup oleh Roh",
+        "title_en": "Life in the Spirit"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Εἰ δὲ τὸ πνεῦμα τοῦ ἐγείραντος Ἰησοῦν ἐκ νεκρῶν οἰκεῖ ἐν ὑμῖν, ὁ ἐγείρας τὸν χριστὸν ἐκ νεκρῶν ζῳοποιήσει καὶ τὰ θνητὰ σώματα ὑμῶν, διὰ τὸ ἐνοικοῦν αὐτοῦ πνεῦμα ἐν ὑμῖν.",
+      "greek_stripped": "ει δε το πνευμα του εγειραντος ιησουν εκ νεκρων οικει εν υμιν ο εγειρας τον χριστον εκ νεκρων ζωοποιησει και τα θνητα σωματα υμων δια το ενοικουν αυτου πνευμα εν υμιν",
+      "transliteration": "ei de to pneuma tou egeirantos iēsoun ek nekrōn oikei en ymin o egeiras ton christon ek nekrōn zōopoiēsei kai ta thnēta sōmata ymōn dia to enoikoun autou pneuma en ymin",
+      "words": [
+        {
+          "surface": "ει",
+          "strongs": "1487",
+          "morph": "COND",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-NSN",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "εγειραντος",
+          "strongs": "1453",
+          "morph": "V-AAP-GSM",
+          "alt": []
+        },
+        {
+          "surface": "ιησουν",
+          "strongs": "2424",
+          "morph": "N-ASM",
+          "alt": []
+        },
+        {
+          "surface": "εκ",
+          "strongs": "1537",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "νεκρων",
+          "strongs": "3498",
+          "morph": "A-GPM",
+          "alt": []
+        },
+        {
+          "surface": "οικει",
+          "strongs": "3611",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "υμιν",
+          "strongs": "4771",
+          "morph": "P-2DP",
+          "alt": []
+        },
+        {
+          "surface": "ο",
+          "strongs": "3588",
+          "morph": "T-NSM",
+          "alt": []
+        },
+        {
+          "surface": "εγειρας",
+          "strongs": "1453",
+          "morph": "V-AAP-NSM",
+          "alt": []
+        },
+        {
+          "surface": "τον",
+          "strongs": "3588",
+          "morph": "T-ASM",
+          "alt": []
+        },
+        {
+          "surface": "χριστον",
+          "strongs": "5547",
+          "morph": "N-ASM",
+          "alt": []
+        },
+        {
+          "surface": "εκ",
+          "strongs": "1537",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "νεκρων",
+          "strongs": "3498",
+          "morph": "A-GPM",
+          "alt": []
+        },
+        {
+          "surface": "ζωοποιησει",
+          "strongs": "2227",
+          "morph": "V-FAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "τα",
+          "strongs": "3588",
+          "morph": "T-APN",
+          "alt": []
+        },
+        {
+          "surface": "θνητα",
+          "strongs": "2349",
+          "morph": "A-APN",
+          "alt": []
+        },
+        {
+          "surface": "σωματα",
+          "strongs": "4983",
+          "morph": "N-APN",
+          "alt": []
+        },
+        {
+          "surface": "υμων",
+          "strongs": "4771",
+          "morph": "P-2GP",
+          "alt": []
+        },
+        {
+          "surface": "δια",
+          "strongs": "1223",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-ASN",
+          "alt": []
+        },
+        {
+          "surface": "ενοικουν",
+          "strongs": "1774",
+          "morph": "V-PAP-ASN",
+          "alt": []
+        },
+        {
+          "surface": "αυτου",
+          "strongs": "846",
+          "morph": "P-GSM",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-ASN",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "υμιν",
+          "strongs": "4771",
+          "morph": "P-2DP",
+          "alt": []
+        }
+      ],
+      "word_count": 31,
+      "kjv": "But if the Spirit of him that raised up Jesus from the dead dwell in you, he that raised up Christ from the dead shall also quicken your mortal bodies by his Spirit that dwelleth in you.",
+      "kjv_raw": "But if the Spirit of him that raised up Jesus from the dead dwell in you, he that raised up Christ from the dead shall also quicken your mortal bodies by his Spirit that dwelleth in you.",
+      "ind": "Namun, jika Roh Dia yang membangkitkan Yesus dari antara orang mati tinggal dalam kamu, Dia yang membangkitkan Yesus Kristus dari antara orang mati juga akan memberi hidup kepada tubuhmu yang fana melalui Roh-Nya yang tinggal dalam kamu.",
+      "variants": [
+        {
+          "verse": 11,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "Ἰησοῦν",
+          "other_text": "τὸν Ἰησοῦν",
+          "apparatus_note": "{NA Ἰησοῦν > τὸν Ἰησοῦν }"
+        },
+        {
+          "verse": 11,
+          "seq": 2,
+          "witness": "NA",
+          "type": "omission",
+          "byz_text": "τὸν",
+          "other_text": "-",
+          "apparatus_note": "{NA τὸν > - }"
+        },
+        {
+          "verse": 11,
+          "seq": 3,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "τὸ ἐνοικοῦν αὐτοῦ πνεῦμα",
+          "other_text": "τοῦ ἐνοικοῦντος αὐτοῦ πνεύματος",
+          "apparatus_note": "{NA τὸ ἐνοικοῦν αὐτοῦ πνεῦμα > τοῦ ἐνοικοῦντος αὐτοῦ πνεύματος }"
+        }
+      ],
+      "content_hash": "9b86e7d44d595e099a907c5ca746713df9a73bc2d9ab09313f1dac426e439ab1"
+    },
+    {
+      "ref": "Roma 8:12",
+      "chapter": 8,
+      "verse": 12,
+      "pericope": {
+        "range": "8:12-17",
+        "title_id": "Anak-anak Allah",
+        "title_en": "Children of God"
+      },
+      "paragraph_start": true,
+      "greek_accented": "Ἄρα οὖν, ἀδελφοί, ὀφειλέται ἐσμέν, οὐ τῇ σαρκί, τοῦ κατὰ σάρκα ζῇν·",
+      "greek_stripped": "αρα ουν αδελφοι οφειλεται εσμεν ου τη σαρκι του κατα σαρκα ζην",
+      "transliteration": "ara oun adelphoi opheiletai esmen ou tē sarki tou kata sarka zēn",
+      "words": [
+        {
+          "surface": "αρα",
+          "strongs": "686",
+          "morph": "PRT",
+          "alt": []
+        },
+        {
+          "surface": "ουν",
+          "strongs": "3767",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "αδελφοι",
+          "strongs": "80",
+          "morph": "N-VPM",
+          "alt": []
+        },
+        {
+          "surface": "οφειλεται",
+          "strongs": "3781",
+          "morph": "N-NPM",
+          "alt": []
+        },
+        {
+          "surface": "εσμεν",
+          "strongs": "1510",
+          "morph": "V-PAI-1P",
+          "alt": []
+        },
+        {
+          "surface": "ου",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "τη",
+          "strongs": "3588",
+          "morph": "T-DSF",
+          "alt": []
+        },
+        {
+          "surface": "σαρκι",
+          "strongs": "4561",
+          "morph": "N-DSF",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSN",
+          "alt": []
+        },
+        {
+          "surface": "κατα",
+          "strongs": "2596",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "σαρκα",
+          "strongs": "4561",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "ζην",
+          "strongs": "2198",
+          "morph": "V-PAN",
+          "alt": []
+        }
+      ],
+      "word_count": 12,
+      "kjv": "Therefore, brethren, we are debtors, not to the flesh, to live after the flesh.",
+      "kjv_raw": "Therefore, brethren, we are debtors, not to the flesh, to live after the flesh.",
+      "ind": "Jadi, Saudara-saudaraku, kita adalah orang-orang yang berutang, bukan kepada daging, supaya hidup menurut daging.",
+      "variants": [],
+      "content_hash": "d206e8ed6c35c2cb593d362d7c2626f18410b62d766d144cadc1b8e70ad05d02"
+    },
+    {
+      "ref": "Roma 8:13",
+      "chapter": 8,
+      "verse": 13,
+      "pericope": {
+        "range": "8:12-17",
+        "title_id": "Anak-anak Allah",
+        "title_en": "Children of God"
+      },
+      "paragraph_start": false,
+      "greek_accented": "εἰ γὰρ κατὰ σάρκα ζῆτε, μέλλετε ἀποθνῄσκειν· εἰ δὲ πνεύματι τὰς πράξεις τοῦ σώματος θανατοῦτε, ζήσεσθε.",
+      "greek_stripped": "ει γαρ κατα σαρκα ζητε μελλετε αποθνησκειν ει δε πνευματι τας πραξεις του σωματος θανατουτε ζησεσθε",
+      "transliteration": "ei gar kata sarka zēte mellete apothnēskein ei de pneumati tas praxeis tou sōmatos thanatoute zēsesthe",
+      "words": [
+        {
+          "surface": "ει",
+          "strongs": "1487",
+          "morph": "COND",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "κατα",
+          "strongs": "2596",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "σαρκα",
+          "strongs": "4561",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "ζητε",
+          "strongs": "2198",
+          "morph": "V-PAI-2P",
+          "alt": []
+        },
+        {
+          "surface": "μελλετε",
+          "strongs": "3195",
+          "morph": "V-PAI-2P",
+          "alt": []
+        },
+        {
+          "surface": "αποθνησκειν",
+          "strongs": "599",
+          "morph": "V-PAN",
+          "alt": []
+        },
+        {
+          "surface": "ει",
+          "strongs": "1487",
+          "morph": "COND",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "πνευματι",
+          "strongs": "4151",
+          "morph": "N-DSN",
+          "alt": []
+        },
+        {
+          "surface": "τας",
+          "strongs": "3588",
+          "morph": "T-APF",
+          "alt": []
+        },
+        {
+          "surface": "πραξεις",
+          "strongs": "4234",
+          "morph": "N-APF",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSN",
+          "alt": []
+        },
+        {
+          "surface": "σωματος",
+          "strongs": "4983",
+          "morph": "N-GSN",
+          "alt": []
+        },
+        {
+          "surface": "θανατουτε",
+          "strongs": "2289",
+          "morph": "V-PAI-2P",
+          "alt": []
+        },
+        {
+          "surface": "ζησεσθε",
+          "strongs": "2198",
+          "morph": "V-FDI-2P",
+          "alt": []
+        }
+      ],
+      "word_count": 16,
+      "kjv": "For if ye live after the flesh, ye shall die: but if ye through the Spirit do mortify the deeds of the body, ye shall live.",
+      "kjv_raw": "For if ye live after the flesh, ye shall die: but if ye through the Spirit do mortify the deeds of the body, ye shall live.",
+      "ind": "Sebab, jika kamu hidup menurut daging, kamu akan mati, tetapi jika oleh Roh kamu mematikan perbuatan-perbuatan tubuhmu, kamu akan hidup.",
+      "variants": [],
+      "content_hash": "eabf6b97a37f045350772d8c69dcebc31d15fd7f1b312be19392191bb0308431"
+    },
+    {
+      "ref": "Roma 8:14",
+      "chapter": 8,
+      "verse": 14,
+      "pericope": {
+        "range": "8:12-17",
+        "title_id": "Anak-anak Allah",
+        "title_en": "Children of God"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Ὅσοι γὰρ πνεύματι θεοῦ ἄγονται, οὗτοί εἰσιν υἱοὶ θεοῦ.",
+      "greek_stripped": "οσοι γαρ πνευματι θεου αγονται ουτοι εισιν υιοι θεου",
+      "transliteration": "osoi gar pneumati theou agontai outoi eisin uioi theou",
+      "words": [
+        {
+          "surface": "οσοι",
+          "strongs": "3745",
+          "morph": "K-NPM",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "πνευματι",
+          "strongs": "4151",
+          "morph": "N-DSN",
+          "alt": []
+        },
+        {
+          "surface": "θεου",
+          "strongs": "2316",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "αγονται",
+          "strongs": "71",
+          "morph": "V-PPI-3P",
+          "alt": []
+        },
+        {
+          "surface": "ουτοι",
+          "strongs": "3778",
+          "morph": "D-NPM",
+          "alt": []
+        },
+        {
+          "surface": "εισιν",
+          "strongs": "1510",
+          "morph": "V-PAI-3P",
+          "alt": []
+        },
+        {
+          "surface": "υιοι",
+          "strongs": "5207",
+          "morph": "N-NPM",
+          "alt": []
+        },
+        {
+          "surface": "θεου",
+          "strongs": "2316",
+          "morph": "N-GSM",
+          "alt": []
+        }
+      ],
+      "word_count": 9,
+      "kjv": "For as many as are led by the Spirit of God, they are the sons of God.",
+      "kjv_raw": "For as many as are led by the Spirit of God, they are the sons of God.",
+      "ind": "Sebab, semua orang yang dipimpin oleh Roh Allah adalah anak-anak Allah.",
+      "variants": [
+        {
+          "verse": 14,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "εἰσιν υἱοὶ θεοῦ",
+          "other_text": "υἱοὶ θεοῦ εἰσιν",
+          "apparatus_note": "{NA εἰσιν υἱοὶ θεοῦ > υἱοὶ θεοῦ εἰσιν }"
+        }
+      ],
+      "content_hash": "bd4399adef98d779b8d8aeb8b994ca46ef4e07b62eac4ba04513176063cece45"
+    },
+    {
+      "ref": "Roma 8:15",
+      "chapter": 8,
+      "verse": 15,
+      "pericope": {
+        "range": "8:12-17",
+        "title_id": "Anak-anak Allah",
+        "title_en": "Children of God"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Οὐ γὰρ ἐλάβετε πνεῦμα δουλείας πάλιν εἰς φόβον, ἀλλ’ ἐλάβετε πνεῦμα υἱοθεσίας, ἐν ᾧ κράζομεν, Ἀββᾶ, ὁ πατήρ.",
+      "greek_stripped": "ου γαρ ελαβετε πνευμα δουλειας παλιν εις φοβον αλλ ελαβετε πνευμα υιοθεσιας εν ω κραζομεν αββα ο πατηρ",
+      "transliteration": "ou gar elabete pneuma douleias palin eis phobon all elabete pneuma uiothesias en ō krazomen abba o patēr",
+      "words": [
+        {
+          "surface": "ου",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ελαβετε",
+          "strongs": "2983",
+          "morph": "V-2AAI-2P",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-ASN",
+          "alt": []
+        },
+        {
+          "surface": "δουλειας",
+          "strongs": "1397",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "παλιν",
+          "strongs": "3825",
+          "morph": "ADV",
+          "alt": []
+        },
+        {
+          "surface": "εις",
+          "strongs": "1519",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "φοβον",
+          "strongs": "5401",
+          "morph": "N-ASM",
+          "alt": []
+        },
+        {
+          "surface": "αλλ",
+          "strongs": "235",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ελαβετε",
+          "strongs": "2983",
+          "morph": "V-2AAI-2P",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-ASN",
+          "alt": []
+        },
+        {
+          "surface": "υιοθεσιας",
+          "strongs": "5206",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "ω",
+          "strongs": "3739",
+          "morph": "R-DSN",
+          "alt": []
+        },
+        {
+          "surface": "κραζομεν",
+          "strongs": "2896",
+          "morph": "V-PAI-1P",
+          "alt": []
+        },
+        {
+          "surface": "αββα",
+          "strongs": "5",
+          "morph": "N-PRI",
+          "alt": []
+        },
+        {
+          "surface": "ο",
+          "strongs": "3588",
+          "morph": "T-NSM",
+          "alt": []
+        },
+        {
+          "surface": "πατηρ",
+          "strongs": "3962",
+          "morph": "N-NSM",
+          "alt": []
+        }
+      ],
+      "word_count": 18,
+      "kjv": "For ye have not received the spirit of bondage again to fear; but ye have received the Spirit of adoption, whereby we cry, Abba, Father.",
+      "kjv_raw": "For ye have not received the spirit of bondage again to fear; but ye have received the Spirit of adoption, whereby we cry, Abba, Father.",
+      "ind": "Sebab, kamu tidak menerima roh perbudakan untuk kembali kepada ketakutan, tetapi kamu telah menerima Roh yang telah mengangkat kamu menjadi anak-anak, yang oleh-Nya kita berseru, “Abba, Bapa!”",
+      "variants": [
+        {
+          "verse": 15,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "ἀλλ’",
+          "other_text": "ἀλλὰ",
+          "apparatus_note": "{NA ἀλλ’ > ἀλλὰ }"
+        }
+      ],
+      "content_hash": "8d197fc6242bebcf0c172afb240b4fbd2adbce57b82ee7622e8036f5ae2fe9f4"
+    },
+    {
+      "ref": "Roma 8:16",
+      "chapter": 8,
+      "verse": 16,
+      "pericope": {
+        "range": "8:12-17",
+        "title_id": "Anak-anak Allah",
+        "title_en": "Children of God"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Αὐτὸ τὸ πνεῦμα συμμαρτυρεῖ τῷ πνεύματι ἡμῶν, ὅτι ἐσμὲν τέκνα θεοῦ·",
+      "greek_stripped": "αυτο το πνευμα συμμαρτυρει τω πνευματι ημων οτι εσμεν τεκνα θεου",
+      "transliteration": "auto to pneuma symmartyrei tō pneumati ēmōn oti esmen tekna theou",
+      "words": [
+        {
+          "surface": "αυτο",
+          "strongs": "846",
+          "morph": "P-NSN",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-NSN",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "συμμαρτυρει",
+          "strongs": "4828",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "τω",
+          "strongs": "3588",
+          "morph": "T-DSN",
+          "alt": []
+        },
+        {
+          "surface": "πνευματι",
+          "strongs": "4151",
+          "morph": "N-DSN",
+          "alt": []
+        },
+        {
+          "surface": "ημων",
+          "strongs": "1473",
+          "morph": "P-1GP",
+          "alt": []
+        },
+        {
+          "surface": "οτι",
+          "strongs": "3754",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "εσμεν",
+          "strongs": "1510",
+          "morph": "V-PAI-1P",
+          "alt": []
+        },
+        {
+          "surface": "τεκνα",
+          "strongs": "5043",
+          "morph": "N-NPN",
+          "alt": []
+        },
+        {
+          "surface": "θεου",
+          "strongs": "2316",
+          "morph": "N-GSM",
+          "alt": []
+        }
+      ],
+      "word_count": 11,
+      "kjv": "The Spirit itself beareth witness with our spirit, that we are the children of God:",
+      "kjv_raw": "The Spirit itself beareth witness with our spirit, that we are the children of God:",
+      "ind": "Roh Allah sendiri bersaksi bersama roh kita bahwa kita adalah anak-anak Allah,",
+      "variants": [],
+      "content_hash": "a89e0c0e286b1dba7cdd506c25952f5325df6ae3f7744e087554bf503db67741"
+    },
+    {
+      "ref": "Roma 8:17",
+      "chapter": 8,
+      "verse": 17,
+      "pericope": {
+        "range": "8:12-17",
+        "title_id": "Anak-anak Allah",
+        "title_en": "Children of God"
+      },
+      "paragraph_start": false,
+      "greek_accented": "εἰ δὲ τέκνα, καὶ κληρονόμοι· κληρονόμοι μὲν θεοῦ, συγκληρονόμοι δὲ χριστοῦ· εἴπερ συμπάσχομεν, ἵνα καὶ συνδοξασθῶμεν.",
+      "greek_stripped": "ει δε τεκνα και κληρονομοι κληρονομοι μεν θεου συγκληρονομοι δε χριστου ειπερ συμπασχομεν ινα και συνδοξασθωμεν",
+      "transliteration": "ei de tekna kai klēronomoi klēronomoi men theou sygklēronomoi de christou eiper sympaschomen ina kai syndoxasthōmen",
+      "words": [
+        {
+          "surface": "ει",
+          "strongs": "1487",
+          "morph": "COND",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "τεκνα",
+          "strongs": "5043",
+          "morph": "N-NPN",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "κληρονομοι",
+          "strongs": "2818",
+          "morph": "N-NPM",
+          "alt": []
+        },
+        {
+          "surface": "κληρονομοι",
+          "strongs": "2818",
+          "morph": "N-NPM",
+          "alt": []
+        },
+        {
+          "surface": "μεν",
+          "strongs": "3303",
+          "morph": "PRT",
+          "alt": []
+        },
+        {
+          "surface": "θεου",
+          "strongs": "2316",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "συγκληρονομοι",
+          "strongs": "4789",
+          "morph": "A-NPM",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "χριστου",
+          "strongs": "5547",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "ειπερ",
+          "strongs": "1512",
+          "morph": "COND",
+          "alt": []
+        },
+        {
+          "surface": "συμπασχομεν",
+          "strongs": "4841",
+          "morph": "V-PAI-1P",
+          "alt": []
+        },
+        {
+          "surface": "ινα",
+          "strongs": "2443",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "συνδοξασθωμεν",
+          "strongs": "4888",
+          "morph": "V-APS-1P",
+          "alt": []
+        }
+      ],
+      "word_count": 16,
+      "kjv": "And if children, then heirs; heirs of God, and joint-heirs with Christ; if so be that we suffer with him, that we may be also glorified together.",
+      "kjv_raw": "And if children, then heirs; heirs of God, and joint-heirs with Christ; if so be that we suffer with [him], that we may be also glorified together.",
+      "ind": "dan jika kita adalah anak, kita juga adalah pewaris, pewaris Allah, dan sesama pewaris dengan Kristus; jika kita benar-benar turut menderita bersama Dia, supaya kita juga akan dimuliakan bersama dengan Dia.",
+      "variants": [],
+      "content_hash": "1b4f4ba68bccaacf6c8c38ca233c46eab7774562e15218700290e5667b245a39"
+    },
+    {
+      "ref": "Roma 8:18",
+      "chapter": 8,
+      "verse": 18,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": true,
+      "greek_accented": "Λογίζομαι γὰρ ὅτι οὐκ ἄξια τὰ παθήματα τοῦ νῦν καιροῦ πρὸς τὴν μέλλουσαν δόξαν ἀποκαλυφθῆναι εἰς ἡμᾶς.",
+      "greek_stripped": "λογιζομαι γαρ οτι ουκ αξια τα παθηματα του νυν καιρου προς την μελλουσαν δοξαν αποκαλυφθηναι εις ημας",
+      "transliteration": "logizomai gar oti ouk axia ta pathēmata tou nyn kairou pros tēn mellousan doxan apokalyphthēnai eis ēmas",
+      "words": [
+        {
+          "surface": "λογιζομαι",
+          "strongs": "3049",
+          "morph": "V-PNI-1S",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "οτι",
+          "strongs": "3754",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ουκ",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "αξια",
+          "strongs": "514",
+          "morph": "A-NPN",
+          "alt": []
+        },
+        {
+          "surface": "τα",
+          "strongs": "3588",
+          "morph": "T-NPN",
+          "alt": []
+        },
+        {
+          "surface": "παθηματα",
+          "strongs": "3804",
+          "morph": "N-NPN",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "νυν",
+          "strongs": "3568",
+          "morph": "ADV",
+          "alt": []
+        },
+        {
+          "surface": "καιρου",
+          "strongs": "2540",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "προς",
+          "strongs": "4314",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "την",
+          "strongs": "3588",
+          "morph": "T-ASF",
+          "alt": []
+        },
+        {
+          "surface": "μελλουσαν",
+          "strongs": "3195",
+          "morph": "V-PAP-ASF",
+          "alt": []
+        },
+        {
+          "surface": "δοξαν",
+          "strongs": "1391",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "αποκαλυφθηναι",
+          "strongs": "601",
+          "morph": "V-APN",
+          "alt": []
+        },
+        {
+          "surface": "εις",
+          "strongs": "1519",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "ημας",
+          "strongs": "1473",
+          "morph": "P-1AP",
+          "alt": []
+        }
+      ],
+      "word_count": 17,
+      "kjv": "For I reckon that the sufferings of this present time are not worthy to be compared with the glory which shall be revealed in us.",
+      "kjv_raw": "For I reckon that the sufferings of this present time [are] not worthy [to be compared] with the glory which shall be revealed in us.",
+      "ind": "Sebab, aku menganggap bahwa penderitaan-penderitaan yang kita alami sekarang tidak sebanding dengan kemuliaan yang akan dinyatakan kepada kita.",
+      "variants": [],
+      "content_hash": "3a8f1132f241115272c25fb30959c1b6437ab424e864312fd388c29358929d65"
+    },
+    {
+      "ref": "Roma 8:19",
+      "chapter": 8,
+      "verse": 19,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Ἡ γὰρ ἀποκαραδοκία τῆς κτίσεως τὴν ἀποκάλυψιν τῶν υἱῶν τοῦ θεοῦ ἀπεκδέχεται.",
+      "greek_stripped": "η γαρ αποκαραδοκια της κτισεως την αποκαλυψιν των υιων του θεου απεκδεχεται",
+      "transliteration": "ē gar apokaradokia tēs ktiseōs tēn apokalypsin tōn uiōn tou theou apekdechetai",
+      "words": [
+        {
+          "surface": "η",
+          "strongs": "3588",
+          "morph": "T-NSF",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "αποκαραδοκια",
+          "strongs": "603",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "κτισεως",
+          "strongs": "2937",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "την",
+          "strongs": "3588",
+          "morph": "T-ASF",
+          "alt": []
+        },
+        {
+          "surface": "αποκαλυψιν",
+          "strongs": "602",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "των",
+          "strongs": "3588",
+          "morph": "T-GPM",
+          "alt": []
+        },
+        {
+          "surface": "υιων",
+          "strongs": "5207",
+          "morph": "N-GPM",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "θεου",
+          "strongs": "2316",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "απεκδεχεται",
+          "strongs": "553",
+          "morph": "V-PNI-3S",
+          "alt": []
+        }
+      ],
+      "word_count": 12,
+      "kjv": "For the earnest expectation of the creature waiteth for the manifestation of the sons of God.",
+      "kjv_raw": "For the earnest expectation of the creature waiteth for the manifestation of the sons of God.",
+      "ind": "Sebab, semua ciptaan dengan rindu menantikan saat anak-anak Allah dinyatakan.",
+      "variants": [],
+      "content_hash": "0bc253bf59b5ed23a90b393be5be6041ddff12236598d9aae768a65e4a58f2c8"
+    },
+    {
+      "ref": "Roma 8:20",
+      "chapter": 8,
+      "verse": 20,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Τῇ γὰρ ματαιότητι ἡ κτίσις ὑπετάγη, οὐχ ἑκοῦσα, ἀλλὰ διὰ τὸν ὑποτάξαντα, ἐπ’ ἐλπίδι·",
+      "greek_stripped": "τη γαρ ματαιοτητι η κτισις υπεταγη ουχ εκουσα αλλα δια τον υποταξαντα επ ελπιδι",
+      "transliteration": "tē gar mataiotēti ē ktisis ypetagē ouch ekousa alla dia ton ypotaxanta ep elpidi",
+      "words": [
+        {
+          "surface": "τη",
+          "strongs": "3588",
+          "morph": "T-DSF",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ματαιοτητι",
+          "strongs": "3153",
+          "morph": "N-DSF",
+          "alt": []
+        },
+        {
+          "surface": "η",
+          "strongs": "3588",
+          "morph": "T-NSF",
+          "alt": []
+        },
+        {
+          "surface": "κτισις",
+          "strongs": "2937",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "υπεταγη",
+          "strongs": "5293",
+          "morph": "V-2API-3S",
+          "alt": []
+        },
+        {
+          "surface": "ουχ",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "εκουσα",
+          "strongs": "1635",
+          "morph": "A-NSF",
+          "alt": []
+        },
+        {
+          "surface": "αλλα",
+          "strongs": "235",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "δια",
+          "strongs": "1223",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "τον",
+          "strongs": "3588",
+          "morph": "T-ASM",
+          "alt": []
+        },
+        {
+          "surface": "υποταξαντα",
+          "strongs": "5293",
+          "morph": "V-AAP-ASM",
+          "alt": []
+        },
+        {
+          "surface": "επ",
+          "strongs": "1909",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "ελπιδι",
+          "strongs": "1680",
+          "morph": "N-DSF",
+          "alt": []
+        }
+      ],
+      "word_count": 14,
+      "kjv": "For the creature was made subject to vanity, not willingly, but by reason of him who hath subjected the same in hope,",
+      "kjv_raw": "For the creature was made subject to vanity, not willingly, but by reason of him who hath subjected [the same] in hope,",
+      "ind": "Sebab, semua ciptaan menjadi sasaran kesia-siaan, bukan karena diingininya, tetapi karena Dia yang menaklukkannya, dengan pengharapan,",
+      "variants": [
+        {
+          "verse": 20,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "ἐπ’ ἐλπίδι",
+          "other_text": "ἐφ’ ἑλπίδι",
+          "apparatus_note": "{NA ἐπ’ ἐλπίδι > ἐφ’ ἑλπίδι }"
+        }
+      ],
+      "content_hash": "03b969fbd984f3e896a6f9fd46afc771c082346d821b23ced39751e07b4c5755"
+    },
+    {
+      "ref": "Roma 8:21",
+      "chapter": 8,
+      "verse": 21,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": false,
+      "greek_accented": "ὅτι καὶ αὐτὴ ἡ κτίσις ἐλευθερωθήσεται ἀπὸ τῆς δουλείας τῆς φθορᾶς εἰς τὴν ἐλευθερίαν τῆς δόξης τῶν τέκνων τοῦ θεοῦ.",
+      "greek_stripped": "οτι και αυτη η κτισις ελευθερωθησεται απο της δουλειας της φθορας εις την ελευθεριαν της δοξης των τεκνων του θεου",
+      "transliteration": "oti kai autē ē ktisis eleutherōthēsetai apo tēs douleias tēs phthoras eis tēn eleutherian tēs doxēs tōn teknōn tou theou",
+      "words": [
+        {
+          "surface": "οτι",
+          "strongs": "3754",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "αυτη",
+          "strongs": "846",
+          "morph": "P-NSF",
+          "alt": []
+        },
+        {
+          "surface": "η",
+          "strongs": "3588",
+          "morph": "T-NSF",
+          "alt": []
+        },
+        {
+          "surface": "κτισις",
+          "strongs": "2937",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "ελευθερωθησεται",
+          "strongs": "1659",
+          "morph": "V-FPI-3S",
+          "alt": []
+        },
+        {
+          "surface": "απο",
+          "strongs": "575",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "δουλειας",
+          "strongs": "1397",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "φθορας",
+          "strongs": "5356",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "εις",
+          "strongs": "1519",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "την",
+          "strongs": "3588",
+          "morph": "T-ASF",
+          "alt": []
+        },
+        {
+          "surface": "ελευθεριαν",
+          "strongs": "1657",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "δοξης",
+          "strongs": "1391",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "των",
+          "strongs": "3588",
+          "morph": "T-GPN",
+          "alt": []
+        },
+        {
+          "surface": "τεκνων",
+          "strongs": "5043",
+          "morph": "N-GPN",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "θεου",
+          "strongs": "2316",
+          "morph": "N-GSM",
+          "alt": []
+        }
+      ],
+      "word_count": 20,
+      "kjv": "Because the creature itself also shall be delivered from the bondage of corruption into the glorious liberty of the children of God.",
+      "kjv_raw": "Because the creature itself also shall be delivered from the bondage of corruption into the glorious liberty of the children of God.",
+      "ind": "supaya ciptaan itu sendiri akan dibebaskan dari ikatan kebinasaan kepada kemerdekaan mulia dari anak-anak Allah.",
+      "variants": [],
+      "content_hash": "4f727ffd0c49702707c5c13a4ebc1255e252b5a9b3e565438b8f9a084cac078d"
+    },
+    {
+      "ref": "Roma 8:22",
+      "chapter": 8,
+      "verse": 22,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Οἴδαμεν γὰρ ὅτι πᾶσα ἡ κτίσις συστενάζει καὶ συνωδίνει ἄχρι τοῦ νῦν.",
+      "greek_stripped": "οιδαμεν γαρ οτι πασα η κτισις συστεναζει και συνωδινει αχρι του νυν",
+      "transliteration": "oidamen gar oti pasa ē ktisis systenazei kai synōdinei achri tou nyn",
+      "words": [
+        {
+          "surface": "οιδαμεν",
+          "strongs": "1492",
+          "morph": "V-RAI-1P",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "οτι",
+          "strongs": "3754",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "πασα",
+          "strongs": "3956",
+          "morph": "A-NSF",
+          "alt": []
+        },
+        {
+          "surface": "η",
+          "strongs": "3588",
+          "morph": "T-NSF",
+          "alt": []
+        },
+        {
+          "surface": "κτισις",
+          "strongs": "2937",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "συστεναζει",
+          "strongs": "4959",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "συνωδινει",
+          "strongs": "4944",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "αχρι",
+          "strongs": "891",
+          "morph": "ADV",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "νυν",
+          "strongs": "3568",
+          "morph": "ADV",
+          "alt": []
+        }
+      ],
+      "word_count": 12,
+      "kjv": "For we know that the whole creation groaneth and travaileth in pain together until now.",
+      "kjv_raw": "For we know that the whole creation groaneth and travaileth in pain together until now.",
+      "ind": "Sebab, kita tahu bahwa seluruh ciptaan sama-sama mengeluh dalam kesakitan bersalin sampai sekarang ini.",
+      "variants": [],
+      "content_hash": "130d9e888de579505e9f189d5c44ef73bf8f3e1e2cf62c3b68b5dea4929b242f"
+    },
+    {
+      "ref": "Roma 8:23",
+      "chapter": 8,
+      "verse": 23,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Οὐ μόνον δέ, ἀλλὰ καὶ αὐτοὶ τὴν ἀπαρχὴν τοῦ πνεύματος ἔχοντες, καὶ ἡμεῖς αὐτοὶ ἐν ἑαυτοῖς στενάζομεν, υἱοθεσίαν ἀπεκδεχόμενοι, τὴν ἀπολύτρωσιν τοῦ σώματος ἡμῶν.",
+      "greek_stripped": "ου μονον δε αλλα και αυτοι την απαρχην του πνευματος εχοντες και ημεις αυτοι εν εαυτοις στεναζομεν υιοθεσιαν απεκδεχομενοι την απολυτρωσιν του σωματος ημων",
+      "transliteration": "ou monon de alla kai autoi tēn aparchēn tou pneumatos echontes kai ēmeis autoi en eautois stenazomen uiothesian apekdechomenoi tēn apolytrōsin tou sōmatos ēmōn",
+      "words": [
+        {
+          "surface": "ου",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "μονον",
+          "strongs": "3440",
+          "morph": "ADV",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "αλλα",
+          "strongs": "235",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "αυτοι",
+          "strongs": "846",
+          "morph": "P-NPM",
+          "alt": []
+        },
+        {
+          "surface": "την",
+          "strongs": "3588",
+          "morph": "T-ASF",
+          "alt": []
+        },
+        {
+          "surface": "απαρχην",
+          "strongs": "536",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSN",
+          "alt": []
+        },
+        {
+          "surface": "πνευματος",
+          "strongs": "4151",
+          "morph": "N-GSN",
+          "alt": []
+        },
+        {
+          "surface": "εχοντες",
+          "strongs": "2192",
+          "morph": "V-PAP-NPM",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ημεις",
+          "strongs": "1473",
+          "morph": "P-1NP",
+          "alt": []
+        },
+        {
+          "surface": "αυτοι",
+          "strongs": "846",
+          "morph": "P-NPM",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "εαυτοις",
+          "strongs": "1438",
+          "morph": "F-1DPM",
+          "alt": []
+        },
+        {
+          "surface": "στεναζομεν",
+          "strongs": "4727",
+          "morph": "V-PAI-1P",
+          "alt": []
+        },
+        {
+          "surface": "υιοθεσιαν",
+          "strongs": "5206",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "απεκδεχομενοι",
+          "strongs": "553",
+          "morph": "V-PNP-NPM",
+          "alt": []
+        },
+        {
+          "surface": "την",
+          "strongs": "3588",
+          "morph": "T-ASF",
+          "alt": []
+        },
+        {
+          "surface": "απολυτρωσιν",
+          "strongs": "629",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSN",
+          "alt": []
+        },
+        {
+          "surface": "σωματος",
+          "strongs": "4983",
+          "morph": "N-GSN",
+          "alt": []
+        },
+        {
+          "surface": "ημων",
+          "strongs": "1473",
+          "morph": "P-1GP",
+          "alt": []
+        }
+      ],
+      "word_count": 24,
+      "kjv": "And not only they, but ourselves also, which have the firstfruits of the Spirit, even we ourselves groan within ourselves, waiting for the adoption, to wit, the redemption of our body.",
+      "kjv_raw": "And not only [they], but ourselves also, which have the firstfruits of the Spirit, even we ourselves groan within ourselves, waiting for the adoption, [to wit], the redemption of our body.",
+      "ind": "Bukan hanya itu, kita pun yang memiliki buah sulung Roh mengeluh dalam hati, sementara menantikan dengan penuh harap pengangkatan sebagai anak, yaitu penebusan tubuh kita.",
+      "variants": [
+        {
+          "verse": 23,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "καὶ ἡμεῖς",
+          "other_text": "ἡμεῖς καὶ",
+          "apparatus_note": "{NA καὶ ἡμεῖς > ἡμεῖς καὶ }"
+        }
+      ],
+      "content_hash": "d18e4789467e44bb742baad4654d915d5e45045f701a2e89bdb53fb3d2e9b580"
+    },
+    {
+      "ref": "Roma 8:24",
+      "chapter": 8,
+      "verse": 24,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Τῇ γὰρ ἐλπίδι ἐσώθημεν· ἐλπὶς δὲ βλεπομένη οὐκ ἔστιν ἐλπίς· ὃ γὰρ βλέπει τις, τί καὶ ἐλπίζει;",
+      "greek_stripped": "τη γαρ ελπιδι εσωθημεν ελπις δε βλεπομενη ουκ εστιν ελπις ο γαρ βλεπει τις τι και ελπιζει",
+      "transliteration": "tē gar elpidi esōthēmen elpis de blepomenē ouk estin elpis o gar blepei tis ti kai elpizei",
+      "words": [
+        {
+          "surface": "τη",
+          "strongs": "3588",
+          "morph": "T-DSF",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ελπιδι",
+          "strongs": "1680",
+          "morph": "N-DSF",
+          "alt": []
+        },
+        {
+          "surface": "εσωθημεν",
+          "strongs": "4982",
+          "morph": "V-API-1P",
+          "alt": []
+        },
+        {
+          "surface": "ελπις",
+          "strongs": "1680",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "βλεπομενη",
+          "strongs": "991",
+          "morph": "V-PPP-NSF",
+          "alt": []
+        },
+        {
+          "surface": "ουκ",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "εστιν",
+          "strongs": "1510",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "ελπις",
+          "strongs": "1680",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "ο",
+          "strongs": "3739",
+          "morph": "R-ASN",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "βλεπει",
+          "strongs": "991",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "τις",
+          "strongs": "5100",
+          "morph": "X-NSM",
+          "alt": []
+        },
+        {
+          "surface": "τι",
+          "strongs": "5101",
+          "morph": "I-ASN",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ελπιζει",
+          "strongs": "1679",
+          "morph": "V-PAI-3S",
+          "alt": []
+        }
+      ],
+      "word_count": 17,
+      "kjv": "For we are saved by hope: but hope that is seen is not hope: for what a man seeth, why doth he yet hope for?",
+      "kjv_raw": "For we are saved by hope: but hope that is seen is not hope: for what a man seeth, why doth he yet hope for?",
+      "ind": "Sebab, dalam pengharapan kita diselamatkan. Akan tetapi, pengharapan yang dilihat bukan pengharapan, sebab siapakah yang berharap pada sesuatu yang sudah dilihatnya?",
+      "variants": [
+        {
+          "verse": 24,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "τις τί καὶ",
+          "other_text": "τίς",
+          "apparatus_note": "{NA τις τί καὶ > τίς }"
+        }
+      ],
+      "content_hash": "546d834db87bd2565eb907e5a808305cd99c878ceb67469b2189929f24af5c10"
+    },
+    {
+      "ref": "Roma 8:25",
+      "chapter": 8,
+      "verse": 25,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Εἰ δὲ ὃ οὐ βλέπομεν ἐλπίζομεν, δι’ ὑπομονῆς ἀπεκδεχόμεθα.",
+      "greek_stripped": "ει δε ο ου βλεπομεν ελπιζομεν δι υπομονης απεκδεχομεθα",
+      "transliteration": "ei de o ou blepomen elpizomen di ypomonēs apekdechometha",
+      "words": [
+        {
+          "surface": "ει",
+          "strongs": "1487",
+          "morph": "COND",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ο",
+          "strongs": "3739",
+          "morph": "R-ASN",
+          "alt": []
+        },
+        {
+          "surface": "ου",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "βλεπομεν",
+          "strongs": "991",
+          "morph": "V-PAI-1P",
+          "alt": []
+        },
+        {
+          "surface": "ελπιζομεν",
+          "strongs": "1679",
+          "morph": "V-PAI-1P",
+          "alt": []
+        },
+        {
+          "surface": "δι",
+          "strongs": "1223",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "υπομονης",
+          "strongs": "5281",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "απεκδεχομεθα",
+          "strongs": "553",
+          "morph": "V-PNI-1P",
+          "alt": []
+        }
+      ],
+      "word_count": 9,
+      "kjv": "But if we hope for that we see not, then do we with patience wait for it.",
+      "kjv_raw": "But if we hope for that we see not, [then] do we with patience wait for [it].",
+      "ind": "Namun, jika kita berharap akan apa yang tidak kita lihat, kita menantikannya dengan tekun.",
+      "variants": [],
+      "content_hash": "15f5849d801199c7d03e35f852bb8af5444123cc9e646b53c1d5002a266d7e0b"
+    },
+    {
+      "ref": "Roma 8:26",
+      "chapter": 8,
+      "verse": 26,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": true,
+      "greek_accented": "Ὡσαύτως δὲ καὶ τὸ πνεῦμα συναντιλαμβάνεται ταῖς ἀσθενείαις ἡμῶν· τὸ γὰρ τί προσευξόμεθα καθὸ δεῖ, οὐκ οἴδαμεν, ἀλλ’ αὐτὸ τὸ πνεῦμα ὑπερεντυγχάνει ὑπὲρ ἡμῶν στεναγμοῖς ἀλαλήτοις·",
+      "greek_stripped": "ωσαυτως δε και το πνευμα συναντιλαμβανεται ταις ασθενειαις ημων το γαρ τι προσευξομεθα καθο δει ουκ οιδαμεν αλλ αυτο το πνευμα υπερεντυγχανει υπερ ημων στεναγμοις αλαλητοις",
+      "transliteration": "ōsautōs de kai to pneuma synantilambanetai tais astheneiais ēmōn to gar ti proseuxometha katho dei ouk oidamen all auto to pneuma yperentygchanei yper ēmōn stenagmois alalētois",
+      "words": [
+        {
+          "surface": "ωσαυτως",
+          "strongs": "5615",
+          "morph": "ADV",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-NSN",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "συναντιλαμβανεται",
+          "strongs": "4878",
+          "morph": "V-PNI-3S",
+          "alt": []
+        },
+        {
+          "surface": "ταις",
+          "strongs": "3588",
+          "morph": "T-DPF",
+          "alt": []
+        },
+        {
+          "surface": "ασθενειαις",
+          "strongs": "769",
+          "morph": "N-DPF",
+          "alt": []
+        },
+        {
+          "surface": "ημων",
+          "strongs": "1473",
+          "morph": "P-1GP",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-ASN",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "τι",
+          "strongs": "5101",
+          "morph": "I-ASN",
+          "alt": []
+        },
+        {
+          "surface": "προσευξομεθα",
+          "strongs": "4336",
+          "morph": "V-FDI-1P",
+          "alt": []
+        },
+        {
+          "surface": "καθο",
+          "strongs": "2526",
+          "morph": "ADV",
+          "alt": []
+        },
+        {
+          "surface": "δει",
+          "strongs": "1163",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "ουκ",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "οιδαμεν",
+          "strongs": "1492",
+          "morph": "V-RAI-1P",
+          "alt": []
+        },
+        {
+          "surface": "αλλ",
+          "strongs": "235",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "αυτο",
+          "strongs": "846",
+          "morph": "P-NSN",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-NSN",
+          "alt": []
+        },
+        {
+          "surface": "πνευμα",
+          "strongs": "4151",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "υπερεντυγχανει",
+          "strongs": "5241",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "υπερ",
+          "strongs": "5228",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "ημων",
+          "strongs": "1473",
+          "morph": "P-1GP",
+          "alt": []
+        },
+        {
+          "surface": "στεναγμοις",
+          "strongs": "4726",
+          "morph": "N-DPM",
+          "alt": []
+        },
+        {
+          "surface": "αλαλητοις",
+          "strongs": "215",
+          "morph": "A-DPM",
+          "alt": []
+        }
+      ],
+      "word_count": 26,
+      "kjv": "Likewise the Spirit also helpeth our infirmities: for we know not what we should pray for as we ought: but the Spirit itself maketh intercession for us with groanings which cannot be uttered.",
+      "kjv_raw": "Likewise the Spirit also helpeth our infirmities: for we know not what we should pray for as we ought: but the Spirit itself maketh intercession for us with groanings which cannot be uttered.",
+      "ind": "Demikianlah, Roh menolong kita dalam kelemahan kita. Sebab, kita tidak tahu apa yang seharusnya kita doakan, tetapi Roh sendiri yang bersyafaat demi kita dengan keluhan-keluhan yang tidak dapat diungkapkan dengan kata-kata.",
+      "variants": [
+        {
+          "verse": 26,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "ταῖς ἀσθενείαις",
+          "other_text": "τῇ ἀσθενείᾳ",
+          "apparatus_note": "{NA ταῖς ἀσθενείαις > τῇ ἀσθενείᾳ }"
+        },
+        {
+          "verse": 26,
+          "seq": 2,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "προσευξόμεθα",
+          "other_text": "προσευξώμεθα",
+          "apparatus_note": "{NA προσευξόμεθα > προσευξώμεθα }"
+        },
+        {
+          "verse": 26,
+          "seq": 3,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "ἀλλ’",
+          "other_text": "ἀλλὰ",
+          "apparatus_note": "{NA ἀλλ’ > ἀλλὰ }"
+        },
+        {
+          "verse": 26,
+          "seq": 4,
+          "witness": "NA",
+          "type": "omission",
+          "byz_text": "ὑπὲρ ἡμῶν",
+          "other_text": "-",
+          "apparatus_note": "{NA ὑπὲρ ἡμῶν > - }"
+        }
+      ],
+      "content_hash": "c7025bd645a3fa06689884da280c0a77ddb7f033905592175fd342a1ffc66ffb"
+    },
+    {
+      "ref": "Roma 8:27",
+      "chapter": 8,
+      "verse": 27,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": false,
+      "greek_accented": "ὁ δὲ ἐρευνῶν τὰς καρδίας οἶδεν τί τὸ φρόνημα τοῦ πνεύματος, ὅτι κατὰ θεὸν ἐντυγχάνει ὑπὲρ ἁγίων.",
+      "greek_stripped": "ο δε ερευνων τας καρδιας οιδεν τι το φρονημα του πνευματος οτι κατα θεον εντυγχανει υπερ αγιων",
+      "transliteration": "o de ereunōn tas kardias oiden ti to phronēma tou pneumatos oti kata theon entygchanei yper agiōn",
+      "words": [
+        {
+          "surface": "ο",
+          "strongs": "3588",
+          "morph": "T-NSM",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ερευνων",
+          "strongs": "2045",
+          "morph": "V-PAP-NSM",
+          "alt": []
+        },
+        {
+          "surface": "τας",
+          "strongs": "3588",
+          "morph": "T-APF",
+          "alt": []
+        },
+        {
+          "surface": "καρδιας",
+          "strongs": "2588",
+          "morph": "N-APF",
+          "alt": []
+        },
+        {
+          "surface": "οιδεν",
+          "strongs": "1492",
+          "morph": "V-RAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "τι",
+          "strongs": "5101",
+          "morph": "I-NSN",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-NSN",
+          "alt": []
+        },
+        {
+          "surface": "φρονημα",
+          "strongs": "5427",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSN",
+          "alt": []
+        },
+        {
+          "surface": "πνευματος",
+          "strongs": "4151",
+          "morph": "N-GSN",
+          "alt": []
+        },
+        {
+          "surface": "οτι",
+          "strongs": "3754",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "κατα",
+          "strongs": "2596",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "θεον",
+          "strongs": "2316",
+          "morph": "N-ASM",
+          "alt": []
+        },
+        {
+          "surface": "εντυγχανει",
+          "strongs": "1793",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "υπερ",
+          "strongs": "5228",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "αγιων",
+          "strongs": "40",
+          "morph": "A-GPM",
+          "alt": []
+        }
+      ],
+      "word_count": 17,
+      "kjv": "And he that searcheth the hearts knoweth what is the mind of the Spirit, because he maketh intercession for the saints according to the will of God.",
+      "kjv_raw": "And he that searcheth the hearts knoweth what [is] the mind of the Spirit, because he maketh intercession for the saints according to [the will of] God.",
+      "ind": "Dan, Dia yang menyelidiki hati mengetahui apa yang ada dalam pikiran Roh itu karena Roh bersyafaat bagi orang-orang kudus sesuai dengan kehendak Allah.",
+      "variants": [
+        {
+          "verse": 27,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "ἐρευνῶν",
+          "other_text": "ἐραυνῶν",
+          "apparatus_note": "{NA ἐρευνῶν > ἐραυνῶν }"
+        }
+      ],
+      "content_hash": "3225247fda9a04ee0c063fb6ee8ceb1dc7210b3e111c2d056f544fb41e74a374"
+    },
+    {
+      "ref": "Roma 8:28",
+      "chapter": 8,
+      "verse": 28,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Οἴδαμεν δὲ ὅτι τοῖς ἀγαπῶσιν τὸν θεὸν πάντα συνεργεῖ εἰς ἀγαθόν, τοῖς κατὰ πρόθεσιν κλητοῖς οὖσιν.",
+      "greek_stripped": "οιδαμεν δε οτι τοις αγαπωσιν τον θεον παντα συνεργει εις αγαθον τοις κατα προθεσιν κλητοις ουσιν",
+      "transliteration": "oidamen de oti tois agapōsin ton theon panta synergei eis agathon tois kata prothesin klētois ousin",
+      "words": [
+        {
+          "surface": "οιδαμεν",
+          "strongs": "1492",
+          "morph": "V-RAI-1P",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "οτι",
+          "strongs": "3754",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "τοις",
+          "strongs": "3588",
+          "morph": "T-DPM",
+          "alt": []
+        },
+        {
+          "surface": "αγαπωσιν",
+          "strongs": "25",
+          "morph": "V-PAP-DPM",
+          "alt": []
+        },
+        {
+          "surface": "τον",
+          "strongs": "3588",
+          "morph": "T-ASM",
+          "alt": []
+        },
+        {
+          "surface": "θεον",
+          "strongs": "2316",
+          "morph": "N-ASM",
+          "alt": []
+        },
+        {
+          "surface": "παντα",
+          "strongs": "3956",
+          "morph": "A-APN",
+          "alt": [
+            {
+              "strongs": "3956",
+              "morph": "A-NPN"
+            }
+          ]
+        },
+        {
+          "surface": "συνεργει",
+          "strongs": "4903",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "εις",
+          "strongs": "1519",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "αγαθον",
+          "strongs": "18",
+          "morph": "A-ASN",
+          "alt": []
+        },
+        {
+          "surface": "τοις",
+          "strongs": "3588",
+          "morph": "T-DPM",
+          "alt": []
+        },
+        {
+          "surface": "κατα",
+          "strongs": "2596",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "προθεσιν",
+          "strongs": "4286",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "κλητοις",
+          "strongs": "2822",
+          "morph": "A-DPM",
+          "alt": []
+        },
+        {
+          "surface": "ουσιν",
+          "strongs": "1510",
+          "morph": "V-PAP-DPM",
+          "alt": []
+        }
+      ],
+      "word_count": 16,
+      "kjv": "And we know that all things work together for good to them that love God, to them who are the called according to his purpose.",
+      "kjv_raw": "And we know that all things work together for good to them that love God, to them who are the called according to [his] purpose.",
+      "ind": "Kita tahu bahwa segala sesuatu bekerja bersama-sama untuk kebaikan, bagi mereka yang mengasihi Allah, yaitu mereka yang dipanggil sesuai dengan rencana Allah.",
+      "variants": [],
+      "content_hash": "e6f669bb8810b5c7fc38b6eb59c245ab028eb0056fa71ad552ec83ddfd49ce96"
+    },
+    {
+      "ref": "Roma 8:29",
+      "chapter": 8,
+      "verse": 29,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Ὅτι οὓς προέγνω, καὶ προώρισεν συμμόρφους τῆς εἰκόνος τοῦ υἱοῦ αὐτοῦ, εἰς τὸ εἶναι αὐτὸν πρωτότοκον ἐν πολλοῖς ἀδελφοῖς·",
+      "greek_stripped": "οτι ους προεγνω και προωρισεν συμμορφους της εικονος του υιου αυτου εις το ειναι αυτον πρωτοτοκον εν πολλοις αδελφοις",
+      "transliteration": "oti ous proegnō kai proōrisen symmorphous tēs eikonos tou uiou autou eis to einai auton prōtotokon en pollois adelphois",
+      "words": [
+        {
+          "surface": "οτι",
+          "strongs": "3754",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ους",
+          "strongs": "3739",
+          "morph": "R-APM",
+          "alt": []
+        },
+        {
+          "surface": "προεγνω",
+          "strongs": "4267",
+          "morph": "V-2AAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "προωρισεν",
+          "strongs": "4309",
+          "morph": "V-AAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "συμμορφους",
+          "strongs": "4832",
+          "morph": "A-APM",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "εικονος",
+          "strongs": "1504",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "υιου",
+          "strongs": "5207",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "αυτου",
+          "strongs": "846",
+          "morph": "P-GSM",
+          "alt": []
+        },
+        {
+          "surface": "εις",
+          "strongs": "1519",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "το",
+          "strongs": "3588",
+          "morph": "T-ASN",
+          "alt": []
+        },
+        {
+          "surface": "ειναι",
+          "strongs": "1510",
+          "morph": "V-PAN",
+          "alt": []
+        },
+        {
+          "surface": "αυτον",
+          "strongs": "846",
+          "morph": "P-ASM",
+          "alt": []
+        },
+        {
+          "surface": "πρωτοτοκον",
+          "strongs": "4416",
+          "morph": "A-ASM-S",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "πολλοις",
+          "strongs": "4183",
+          "morph": "A-DPM",
+          "alt": []
+        },
+        {
+          "surface": "αδελφοις",
+          "strongs": "80",
+          "morph": "N-DPM",
+          "alt": []
+        }
+      ],
+      "word_count": 19,
+      "kjv": "For whom he did foreknow, he also did predestinate to be conformed to the image of his Son, that he might be the firstborn among many brethren.",
+      "kjv_raw": "For whom he did foreknow, he also did predestinate [to be] conformed to the image of his Son, that he might be the firstborn among many brethren.",
+      "ind": "Sebab, bagi siapa yang telah Dia kenal sejak semula, juga Dia tentukan sejak semula untuk menjadi serupa dengan gambaran Anak-Nya, supaya Ia menjadi yang sulung di antara banyak saudara.",
+      "variants": [],
+      "content_hash": "e38d710a74b45d91bd2a8581427f7ed364e71528aeeb1460526f40122524b1f3"
+    },
+    {
+      "ref": "Roma 8:30",
+      "chapter": 8,
+      "verse": 30,
+      "pericope": {
+        "range": "8:18-30",
+        "title_id": "Pengharapan Kemuliaan",
+        "title_en": "Future Glory"
+      },
+      "paragraph_start": false,
+      "greek_accented": "οὓς δὲ προώρισεν, τούτους καὶ ἐκάλεσεν· καὶ οὓς ἐκάλεσεν, τούτους καὶ ἐδικαίωσεν· οὓς δὲ ἐδικαίωσεν, τούτους καὶ ἐδόξασεν.",
+      "greek_stripped": "ους δε προωρισεν τουτους και εκαλεσεν και ους εκαλεσεν τουτους και εδικαιωσεν ους δε εδικαιωσεν τουτους και εδοξασεν",
+      "transliteration": "ous de proōrisen toutous kai ekalesen kai ous ekalesen toutous kai edikaiōsen ous de edikaiōsen toutous kai edoxasen",
+      "words": [
+        {
+          "surface": "ους",
+          "strongs": "3739",
+          "morph": "R-APM",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "προωρισεν",
+          "strongs": "4309",
+          "morph": "V-AAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "τουτους",
+          "strongs": "3778",
+          "morph": "D-APM",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "εκαλεσεν",
+          "strongs": "2564",
+          "morph": "V-AAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ους",
+          "strongs": "3739",
+          "morph": "R-APM",
+          "alt": []
+        },
+        {
+          "surface": "εκαλεσεν",
+          "strongs": "2564",
+          "morph": "V-AAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "τουτους",
+          "strongs": "3778",
+          "morph": "D-APM",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "εδικαιωσεν",
+          "strongs": "1344",
+          "morph": "V-AAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "ους",
+          "strongs": "3739",
+          "morph": "R-APM",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "εδικαιωσεν",
+          "strongs": "1344",
+          "morph": "V-AAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "τουτους",
+          "strongs": "3778",
+          "morph": "D-APM",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "εδοξασεν",
+          "strongs": "1392",
+          "morph": "V-AAI-3S",
+          "alt": []
+        }
+      ],
+      "word_count": 18,
+      "kjv": "Moreover whom he did predestinate, them he also called: and whom he called, them he also justified: and whom he justified, them he also glorified.",
+      "kjv_raw": "Moreover whom he did predestinate, them he also called: and whom he called, them he also justified: and whom he justified, them he also glorified.",
+      "ind": "Bagi siapa yang telah Dia tentukan sejak semula, juga Dia panggil; dan siapa yang Dia panggil, juga Dia benarkan, dan siapa yang Dia benarkan, juga Dia muliakan.",
+      "variants": [],
+      "content_hash": "93c66f0a385f129017d447deae31409fec3e45a9ba0c789417d45a824c608234"
+    },
+    {
+      "ref": "Roma 8:31",
+      "chapter": 8,
+      "verse": 31,
+      "pericope": {
+        "range": "8:31-39",
+        "title_id": "Keyakinan Iman",
+        "title_en": "More Than Conquerors"
+      },
+      "paragraph_start": true,
+      "greek_accented": "Τί οὖν ἐροῦμεν πρὸς ταῦτα; Εἰ ὁ θεὸς ὑπὲρ ἡμῶν, τίς καθ’ ἡμῶν;",
+      "greek_stripped": "τι ουν ερουμεν προς ταυτα ει ο θεος υπερ ημων τις καθ ημων",
+      "transliteration": "ti oun eroumen pros tauta ei o theos yper ēmōn tis kath ēmōn",
+      "words": [
+        {
+          "surface": "τι",
+          "strongs": "5101",
+          "morph": "I-ASN",
+          "alt": []
+        },
+        {
+          "surface": "ουν",
+          "strongs": "3767",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ερουμεν",
+          "strongs": "2046",
+          "morph": "V-FAI-1P",
+          "alt": []
+        },
+        {
+          "surface": "προς",
+          "strongs": "4314",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "ταυτα",
+          "strongs": "3778",
+          "morph": "D-APN",
+          "alt": []
+        },
+        {
+          "surface": "ει",
+          "strongs": "1487",
+          "morph": "COND",
+          "alt": []
+        },
+        {
+          "surface": "ο",
+          "strongs": "3588",
+          "morph": "T-NSM",
+          "alt": []
+        },
+        {
+          "surface": "θεος",
+          "strongs": "2316",
+          "morph": "N-NSM",
+          "alt": []
+        },
+        {
+          "surface": "υπερ",
+          "strongs": "5228",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "ημων",
+          "strongs": "1473",
+          "morph": "P-1GP",
+          "alt": []
+        },
+        {
+          "surface": "τις",
+          "strongs": "5101",
+          "morph": "I-NSM",
+          "alt": []
+        },
+        {
+          "surface": "καθ",
+          "strongs": "2596",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "ημων",
+          "strongs": "1473",
+          "morph": "P-1GP",
+          "alt": []
+        }
+      ],
+      "word_count": 13,
+      "kjv": "What shall we then say to these things? If God be for us, who can be against us?",
+      "kjv_raw": "What shall we then say to these things? If God [be] for us, who [can be] against us?",
+      "ind": "Jadi, apa yang akan kita katakan tentang semua ini? Jika Allah di pihak kita, siapakah yang dapat melawan kita?",
+      "variants": [],
+      "content_hash": "5d43f73416959c4f1b84eba57287ca415aa9ea662d2c78f16f64f67ea2c692a7"
+    },
+    {
+      "ref": "Roma 8:32",
+      "chapter": 8,
+      "verse": 32,
+      "pericope": {
+        "range": "8:31-39",
+        "title_id": "Keyakinan Iman",
+        "title_en": "More Than Conquerors"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Ὅς γε τοῦ ἰδίου υἱοῦ οὐκ ἐφείσατο, ἀλλ’ ὑπὲρ ἡμῶν πάντων παρέδωκεν αὐτόν, πῶς οὐχὶ καὶ σὺν αὐτῷ τὰ πάντα ἡμῖν χαρίσεται;",
+      "greek_stripped": "ος γε του ιδιου υιου ουκ εφεισατο αλλ υπερ ημων παντων παρεδωκεν αυτον πως ουχι και συν αυτω τα παντα ημιν χαρισεται",
+      "transliteration": "os ge tou idiou uiou ouk epheisato all yper ēmōn pantōn paredōken auton pōs ouchi kai syn autō ta panta ēmin charisetai",
+      "words": [
+        {
+          "surface": "ος",
+          "strongs": "3739",
+          "morph": "R-NSM",
+          "alt": []
+        },
+        {
+          "surface": "γε",
+          "strongs": "1065",
+          "morph": "PRT",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "ιδιου",
+          "strongs": "2398",
+          "morph": "A-GSM",
+          "alt": []
+        },
+        {
+          "surface": "υιου",
+          "strongs": "5207",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "ουκ",
+          "strongs": "3756",
+          "morph": "PRT-N",
+          "alt": []
+        },
+        {
+          "surface": "εφεισατο",
+          "strongs": "5339",
+          "morph": "V-ADI-3S",
+          "alt": []
+        },
+        {
+          "surface": "αλλ",
+          "strongs": "235",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "υπερ",
+          "strongs": "5228",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "ημων",
+          "strongs": "1473",
+          "morph": "P-1GP",
+          "alt": []
+        },
+        {
+          "surface": "παντων",
+          "strongs": "3956",
+          "morph": "A-GPM",
+          "alt": []
+        },
+        {
+          "surface": "παρεδωκεν",
+          "strongs": "3860",
+          "morph": "V-AAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "αυτον",
+          "strongs": "846",
+          "morph": "P-ASM",
+          "alt": []
+        },
+        {
+          "surface": "πως",
+          "strongs": "4459",
+          "morph": "ADV-I",
+          "alt": []
+        },
+        {
+          "surface": "ουχι",
+          "strongs": "3780",
+          "morph": "PRT-I",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "συν",
+          "strongs": "4862",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "αυτω",
+          "strongs": "846",
+          "morph": "P-DSM",
+          "alt": []
+        },
+        {
+          "surface": "τα",
+          "strongs": "3588",
+          "morph": "T-APN",
+          "alt": []
+        },
+        {
+          "surface": "παντα",
+          "strongs": "3956",
+          "morph": "A-APN",
+          "alt": []
+        },
+        {
+          "surface": "ημιν",
+          "strongs": "1473",
+          "morph": "P-1DP",
+          "alt": []
+        },
+        {
+          "surface": "χαρισεται",
+          "strongs": "5483",
+          "morph": "V-FDI-3S",
+          "alt": []
+        }
+      ],
+      "word_count": 22,
+      "kjv": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things?",
+      "kjv_raw": "He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things?",
+      "ind": "Dia yang tidak menyayangkan Anak-Nya sendiri, tetapi menyerahkan-Nya bagi kita semua, bagaimana mungkin Ia, bersama-sama dengan Dia, tidak memberikan dengan murah hati segala sesuatu bagi kita?",
+      "variants": [
+        {
+          "verse": 32,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "ἀλλ’",
+          "other_text": "ἀλλὰ",
+          "apparatus_note": "{NA ἀλλ’ > ἀλλὰ }"
+        }
+      ],
+      "content_hash": "30c6e230e50e06a1c9bb4aa499404ee3add795dd96e9ef485acdc95537abfbd7"
+    },
+    {
+      "ref": "Roma 8:33",
+      "chapter": 8,
+      "verse": 33,
+      "pericope": {
+        "range": "8:31-39",
+        "title_id": "Keyakinan Iman",
+        "title_en": "More Than Conquerors"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Τίς ἐγκαλέσει κατὰ ἐκλεκτῶν θεοῦ; Θεὸς ὁ δικαιῶν·",
+      "greek_stripped": "τις εγκαλεσει κατα εκλεκτων θεου θεος ο δικαιων",
+      "transliteration": "tis egkalesei kata eklektōn theou theos o dikaiōn",
+      "words": [
+        {
+          "surface": "τις",
+          "strongs": "5101",
+          "morph": "I-NSM",
+          "alt": []
+        },
+        {
+          "surface": "εγκαλεσει",
+          "strongs": "1458",
+          "morph": "V-FAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "κατα",
+          "strongs": "2596",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "εκλεκτων",
+          "strongs": "1588",
+          "morph": "A-GPM",
+          "alt": []
+        },
+        {
+          "surface": "θεου",
+          "strongs": "2316",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "θεος",
+          "strongs": "2316",
+          "morph": "N-NSM",
+          "alt": []
+        },
+        {
+          "surface": "ο",
+          "strongs": "3588",
+          "morph": "T-NSM",
+          "alt": []
+        },
+        {
+          "surface": "δικαιων",
+          "strongs": "1344",
+          "morph": "V-PAP-NSM",
+          "alt": []
+        }
+      ],
+      "word_count": 8,
+      "kjv": "Who shall lay any thing to the charge of God’s elect? It is God that justifieth.",
+      "kjv_raw": "Who shall lay any thing to the charge of God’s elect? [It is] God that justifieth.",
+      "ind": "Siapa yang akan mendakwa orang-orang pilihan Allah? Allahlah yang membenarkan.",
+      "variants": [],
+      "content_hash": "808b99374f2b2f8f33023bded9dda2e54c9ae0961d251fd972dffde70d708185"
+    },
+    {
+      "ref": "Roma 8:34",
+      "chapter": 8,
+      "verse": 34,
+      "pericope": {
+        "range": "8:31-39",
+        "title_id": "Keyakinan Iman",
+        "title_en": "More Than Conquerors"
+      },
+      "paragraph_start": false,
+      "greek_accented": "τίς ὁ κατακρίνων; Χριστὸς ὁ ἀποθανών, μᾶλλον δὲ καὶ ἐγερθείς, ὃς καὶ ἔστιν ἐν δεξιᾷ τοῦ θεοῦ, ὃς καὶ ἐντυγχάνει ὑπὲρ ἡμῶν.",
+      "greek_stripped": "τις ο κατακρινων χριστος ο αποθανων μαλλον δε και εγερθεις ος και εστιν εν δεξια του θεου ος και εντυγχανει υπερ ημων",
+      "transliteration": "tis o katakrinōn christos o apothanōn mallon de kai egertheis os kai estin en dexia tou theou os kai entygchanei yper ēmōn",
+      "words": [
+        {
+          "surface": "τις",
+          "strongs": "5101",
+          "morph": "I-NSM",
+          "alt": []
+        },
+        {
+          "surface": "ο",
+          "strongs": "3588",
+          "morph": "T-NSM",
+          "alt": []
+        },
+        {
+          "surface": "κατακρινων",
+          "strongs": "2632",
+          "morph": "V-PAP-NSM",
+          "alt": []
+        },
+        {
+          "surface": "χριστος",
+          "strongs": "5547",
+          "morph": "N-NSM",
+          "alt": []
+        },
+        {
+          "surface": "ο",
+          "strongs": "3588",
+          "morph": "T-NSM",
+          "alt": []
+        },
+        {
+          "surface": "αποθανων",
+          "strongs": "599",
+          "morph": "V-2AAP-NSM",
+          "alt": []
+        },
+        {
+          "surface": "μαλλον",
+          "strongs": "3123",
+          "morph": "ADV",
+          "alt": []
+        },
+        {
+          "surface": "δε",
+          "strongs": "1161",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "εγερθεις",
+          "strongs": "1453",
+          "morph": "V-APP-NSM",
+          "alt": []
+        },
+        {
+          "surface": "ος",
+          "strongs": "3739",
+          "morph": "R-NSM",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "εστιν",
+          "strongs": "1510",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "δεξια",
+          "strongs": "1188",
+          "morph": "A-DSF",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "θεου",
+          "strongs": "2316",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "ος",
+          "strongs": "3739",
+          "morph": "R-NSM",
+          "alt": []
+        },
+        {
+          "surface": "και",
+          "strongs": "2532",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "εντυγχανει",
+          "strongs": "1793",
+          "morph": "V-PAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "υπερ",
+          "strongs": "5228",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "ημων",
+          "strongs": "1473",
+          "morph": "P-1GP",
+          "alt": []
+        }
+      ],
+      "word_count": 22,
+      "kjv": "Who is he that condemneth? It is Christ that died, yea rather, that is risen again, who is even at the right hand of God, who also maketh intercession for us.",
+      "kjv_raw": "Who [is] he that condemneth? [It is] Christ that died, yea rather, that is risen again, who is even at the right hand of God, who also maketh intercession for us.",
+      "ind": "Siapakah yang akan menghukum? Yesus Kristuslah yang telah mati, yang telah dibangkitkan, bahkan yang duduk di sebelah kanan Allah yang juga bersyafaat bagi kita.",
+      "variants": [
+        {
+          "verse": 34,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "κατακρίνων",
+          "other_text": "κατακρινῶν",
+          "apparatus_note": "{NA κατακρίνων > κατακρινῶν }"
+        },
+        {
+          "verse": 34,
+          "seq": 2,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "Χριστὸς",
+          "other_text": "Χριστὸς [Ἰησοῦς]",
+          "apparatus_note": "{NA Χριστὸς > Χριστὸς [Ἰησοῦς] }"
+        },
+        {
+          "verse": 34,
+          "seq": 3,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "καὶ ἐγερθείς",
+          "other_text": "ἐγερθείς",
+          "apparatus_note": "{NA καὶ ἐγερθείς > ἐγερθείς }"
+        }
+      ],
+      "content_hash": "6b0f3d12c6ccd69e09bb373c16b99bd7c15df3ed9ea97da1d795afb1c290c02d"
+    },
+    {
+      "ref": "Roma 8:35",
+      "chapter": 8,
+      "verse": 35,
+      "pericope": {
+        "range": "8:31-39",
+        "title_id": "Keyakinan Iman",
+        "title_en": "More Than Conquerors"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Τίς ἡμᾶς χωρίσει ἀπὸ τῆς ἀγάπης τοῦ χριστοῦ; Θλίψις, ἢ στενοχωρία, ἢ διωγμός, ἢ λιμός, ἢ γυμνότης, ἢ κίνδυνος, ἢ μάχαιρα;",
+      "greek_stripped": "τις ημας χωρισει απο της αγαπης του χριστου θλιψις η στενοχωρια η διωγμος η λιμος η γυμνοτης η κινδυνος η μαχαιρα",
+      "transliteration": "tis ēmas chōrisei apo tēs agapēs tou christou thlipsis ē stenochōria ē diōgmos ē limos ē gymnotēs ē kindynos ē machaira",
+      "words": [
+        {
+          "surface": "τις",
+          "strongs": "5101",
+          "morph": "I-NSM",
+          "alt": []
+        },
+        {
+          "surface": "ημας",
+          "strongs": "1473",
+          "morph": "P-1AP",
+          "alt": []
+        },
+        {
+          "surface": "χωρισει",
+          "strongs": "5563",
+          "morph": "V-FAI-3S",
+          "alt": []
+        },
+        {
+          "surface": "απο",
+          "strongs": "575",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "αγαπης",
+          "strongs": "26",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "χριστου",
+          "strongs": "5547",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "θλιψις",
+          "strongs": "2347",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "η",
+          "strongs": "2228",
+          "morph": "PRT",
+          "alt": []
+        },
+        {
+          "surface": "στενοχωρια",
+          "strongs": "4730",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "η",
+          "strongs": "2228",
+          "morph": "PRT",
+          "alt": []
+        },
+        {
+          "surface": "διωγμος",
+          "strongs": "1375",
+          "morph": "N-NSM",
+          "alt": []
+        },
+        {
+          "surface": "η",
+          "strongs": "2228",
+          "morph": "PRT",
+          "alt": []
+        },
+        {
+          "surface": "λιμος",
+          "strongs": "3042",
+          "morph": "N-NSM",
+          "alt": []
+        },
+        {
+          "surface": "η",
+          "strongs": "2228",
+          "morph": "PRT",
+          "alt": []
+        },
+        {
+          "surface": "γυμνοτης",
+          "strongs": "1132",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "η",
+          "strongs": "2228",
+          "morph": "PRT",
+          "alt": []
+        },
+        {
+          "surface": "κινδυνος",
+          "strongs": "2794",
+          "morph": "N-NSM",
+          "alt": []
+        },
+        {
+          "surface": "η",
+          "strongs": "2228",
+          "morph": "PRT",
+          "alt": []
+        },
+        {
+          "surface": "μαχαιρα",
+          "strongs": "3162",
+          "morph": "N-NSF",
+          "alt": []
+        }
+      ],
+      "word_count": 21,
+      "kjv": "Who shall separate us from the love of Christ? shall tribulation, or distress, or persecution, or famine, or nakedness, or peril, or sword?",
+      "kjv_raw": "Who shall separate us from the love of Christ? [shall] tribulation, or distress, or persecution, or famine, or nakedness, or peril, or sword?",
+      "ind": "Siapakah yang akan memisahkan kita dari kasih Kristus? Apakah penindasan, atau kesulitan, atau penganiayaan, atau kelaparan, atau ketelanjangan, atau bahaya, atau pedang?",
+      "variants": [],
+      "content_hash": "3d9d21a5741ad7a62f249147d05dd8fd54879f6c1491f95481408922d30d35c0"
+    },
+    {
+      "ref": "Roma 8:36",
+      "chapter": 8,
+      "verse": 36,
+      "pericope": {
+        "range": "8:31-39",
+        "title_id": "Keyakinan Iman",
+        "title_en": "More Than Conquerors"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Καθὼς γέγραπται ὅτι Ἕνεκέν σου θανατούμεθα ὅλην τὴν ἡμέραν· ἐλογίσθημεν ὡς πρόβατα σφαγῆς.",
+      "greek_stripped": "καθως γεγραπται οτι ενεκεν σου θανατουμεθα ολην την ημεραν ελογισθημεν ως προβατα σφαγης",
+      "transliteration": "kathōs gegraptai oti eneken sou thanatoumetha olēn tēn ēmeran elogisthēmen ōs probata sphagēs",
+      "words": [
+        {
+          "surface": "καθως",
+          "strongs": "2531",
+          "morph": "ADV",
+          "alt": []
+        },
+        {
+          "surface": "γεγραπται",
+          "strongs": "1125",
+          "morph": "V-RPI-3S",
+          "alt": []
+        },
+        {
+          "surface": "οτι",
+          "strongs": "3754",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ενεκεν",
+          "strongs": "1752",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "σου",
+          "strongs": "4771",
+          "morph": "P-2GS",
+          "alt": []
+        },
+        {
+          "surface": "θανατουμεθα",
+          "strongs": "2289",
+          "morph": "V-PPI-1P",
+          "alt": []
+        },
+        {
+          "surface": "ολην",
+          "strongs": "3650",
+          "morph": "A-ASF",
+          "alt": []
+        },
+        {
+          "surface": "την",
+          "strongs": "3588",
+          "morph": "T-ASF",
+          "alt": []
+        },
+        {
+          "surface": "ημεραν",
+          "strongs": "2250",
+          "morph": "N-ASF",
+          "alt": []
+        },
+        {
+          "surface": "ελογισθημεν",
+          "strongs": "3049",
+          "morph": "V-API-1P",
+          "alt": []
+        },
+        {
+          "surface": "ως",
+          "strongs": "5613",
+          "morph": "ADV",
+          "alt": []
+        },
+        {
+          "surface": "προβατα",
+          "strongs": "4263",
+          "morph": "N-NPN",
+          "alt": []
+        },
+        {
+          "surface": "σφαγης",
+          "strongs": "4967",
+          "morph": "N-GSF",
+          "alt": []
+        }
+      ],
+      "word_count": 13,
+      "kjv": "As it is written, For thy sake we are killed all the day long; we are accounted as sheep for the slaughter.",
+      "kjv_raw": "As it is written, For thy sake we are killed all the day long; we are accounted as sheep for the slaughter.",
+      "ind": "Seperti ada tertulis, “Demi Engkau, kami sedang dibunuh sepanjang hari; kami dianggap sebagai domba-domba untuk disembelih.”",
+      "variants": [],
+      "content_hash": "2af6f7a5759ad60645d4b580405243dc2f04645971afa3ed9902c448ae75f1ff"
+    },
+    {
+      "ref": "Roma 8:37",
+      "chapter": 8,
+      "verse": 37,
+      "pericope": {
+        "range": "8:31-39",
+        "title_id": "Keyakinan Iman",
+        "title_en": "More Than Conquerors"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Ἀλλ’ ἐν τούτοις πᾶσιν ὑπερνικῶμεν διὰ τοῦ ἀγαπήσαντος ἡμᾶς.",
+      "greek_stripped": "αλλ εν τουτοις πασιν υπερνικωμεν δια του αγαπησαντος ημας",
+      "transliteration": "all en toutois pasin ypernikōmen dia tou agapēsantos ēmas",
+      "words": [
+        {
+          "surface": "αλλ",
+          "strongs": "235",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "τουτοις",
+          "strongs": "3778",
+          "morph": "D-DPN",
+          "alt": []
+        },
+        {
+          "surface": "πασιν",
+          "strongs": "3956",
+          "morph": "A-DPN",
+          "alt": []
+        },
+        {
+          "surface": "υπερνικωμεν",
+          "strongs": "5245",
+          "morph": "V-PAI-1P",
+          "alt": []
+        },
+        {
+          "surface": "δια",
+          "strongs": "1223",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "αγαπησαντος",
+          "strongs": "25",
+          "morph": "V-AAP-GSM",
+          "alt": []
+        },
+        {
+          "surface": "ημας",
+          "strongs": "1473",
+          "morph": "P-1AP",
+          "alt": []
+        }
+      ],
+      "word_count": 9,
+      "kjv": "Nay, in all these things we are more than conquerors through him that loved us.",
+      "kjv_raw": "Nay, in all these things we are more than conquerors through him that loved us.",
+      "ind": "Tidak, dalam semuanya ini, kita lebih daripada para pemenang melalui Dia yang mengasihi kita.",
+      "variants": [],
+      "content_hash": "02b1dc6220d9d61ee85495e168f1b5eb750f7703c15d2be000886ba04eeb8dbe"
+    },
+    {
+      "ref": "Roma 8:38",
+      "chapter": 8,
+      "verse": 38,
+      "pericope": {
+        "range": "8:31-39",
+        "title_id": "Keyakinan Iman",
+        "title_en": "More Than Conquerors"
+      },
+      "paragraph_start": false,
+      "greek_accented": "Πέπεισμαι γὰρ ὅτι οὔτε θάνατος οὔτε ζωὴ οὔτε ἄγγελοι οὔτε ἀρχαὶ οὔτε δυνάμεις οὔτε ἐνεστῶτα οὔτε μέλλοντα",
+      "greek_stripped": "πεπεισμαι γαρ οτι ουτε θανατος ουτε ζωη ουτε αγγελοι ουτε αρχαι ουτε δυναμεις ουτε ενεστωτα ουτε μελλοντα",
+      "transliteration": "pepeismai gar oti oute thanatos oute zōē oute aggeloi oute archai oute dynameis oute enestōta oute mellonta",
+      "words": [
+        {
+          "surface": "πεπεισμαι",
+          "strongs": "3982",
+          "morph": "V-RPI-1S",
+          "alt": []
+        },
+        {
+          "surface": "γαρ",
+          "strongs": "1063",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "οτι",
+          "strongs": "3754",
+          "morph": "CONJ",
+          "alt": []
+        },
+        {
+          "surface": "ουτε",
+          "strongs": "3777",
+          "morph": "CONJ-N",
+          "alt": []
+        },
+        {
+          "surface": "θανατος",
+          "strongs": "2288",
+          "morph": "N-NSM",
+          "alt": []
+        },
+        {
+          "surface": "ουτε",
+          "strongs": "3777",
+          "morph": "CONJ-N",
+          "alt": []
+        },
+        {
+          "surface": "ζωη",
+          "strongs": "2222",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "ουτε",
+          "strongs": "3777",
+          "morph": "CONJ-N",
+          "alt": []
+        },
+        {
+          "surface": "αγγελοι",
+          "strongs": "32",
+          "morph": "N-NPM",
+          "alt": []
+        },
+        {
+          "surface": "ουτε",
+          "strongs": "3777",
+          "morph": "CONJ-N",
+          "alt": []
+        },
+        {
+          "surface": "αρχαι",
+          "strongs": "746",
+          "morph": "N-NPF",
+          "alt": []
+        },
+        {
+          "surface": "ουτε",
+          "strongs": "3777",
+          "morph": "CONJ-N",
+          "alt": []
+        },
+        {
+          "surface": "δυναμεις",
+          "strongs": "1411",
+          "morph": "N-NPF",
+          "alt": []
+        },
+        {
+          "surface": "ουτε",
+          "strongs": "3777",
+          "morph": "CONJ-N",
+          "alt": []
+        },
+        {
+          "surface": "ενεστωτα",
+          "strongs": "1764",
+          "morph": "V-RAP-NPN",
+          "alt": []
+        },
+        {
+          "surface": "ουτε",
+          "strongs": "3777",
+          "morph": "CONJ-N",
+          "alt": []
+        },
+        {
+          "surface": "μελλοντα",
+          "strongs": "3195",
+          "morph": "V-PAP-NPN",
+          "alt": []
+        }
+      ],
+      "word_count": 17,
+      "kjv": "For I am persuaded, that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, nor things to come,",
+      "kjv_raw": "For I am persuaded, that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, nor things to come,",
+      "ind": "Sebab, aku yakin bahwa bukan kematian maupun kehidupan, bukan juga malaikat-malaikat maupun pemerintah-pemerintah, bukan juga hal-hal yang sekarang maupun yang akan datang, ataupun kekuasaan,",
+      "variants": [
+        {
+          "verse": 38,
+          "seq": 1,
+          "witness": "NA",
+          "type": "substitution",
+          "byz_text": "δυνάμεις οὔτε ἐνεστῶτα οὔτε μέλλοντα",
+          "other_text": "ἐνεστῶτα οὔτε μέλλοντα οὔτε δυνάμεις",
+          "apparatus_note": "{NA δυνάμεις οὔτε ἐνεστῶτα οὔτε μέλλοντα > ἐνεστῶτα οὔτε μέλλοντα οὔτε δυνάμεις }"
+        }
+      ],
+      "content_hash": "3eb0f3c8c09231cdb915c5174614e39dd1fd7ed26dc20603fc3465358b5213b6"
+    },
+    {
+      "ref": "Roma 8:39",
+      "chapter": 8,
+      "verse": 39,
+      "pericope": {
+        "range": "8:31-39",
+        "title_id": "Keyakinan Iman",
+        "title_en": "More Than Conquerors"
+      },
+      "paragraph_start": false,
+      "greek_accented": "οὔτε ὕψωμα οὔτε βάθος οὔτε τις κτίσις ἑτέρα δυνήσεται ἡμᾶς χωρίσαι ἀπὸ τῆς ἀγάπης τοῦ θεοῦ τῆς ἐν χριστῷ Ἰησοῦ τῷ κυρίῳ ἡμῶν.",
+      "greek_stripped": "ουτε υψωμα ουτε βαθος ουτε τις κτισις ετερα δυνησεται ημας χωρισαι απο της αγαπης του θεου της εν χριστω ιησου τω κυριω ημων",
+      "transliteration": "oute ypsōma oute bathos oute tis ktisis etera dynēsetai ēmas chōrisai apo tēs agapēs tou theou tēs en christō iēsou tō kyriō ēmōn",
+      "words": [
+        {
+          "surface": "ουτε",
+          "strongs": "3777",
+          "morph": "CONJ-N",
+          "alt": []
+        },
+        {
+          "surface": "υψωμα",
+          "strongs": "5313",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "ουτε",
+          "strongs": "3777",
+          "morph": "CONJ-N",
+          "alt": []
+        },
+        {
+          "surface": "βαθος",
+          "strongs": "899",
+          "morph": "N-NSN",
+          "alt": []
+        },
+        {
+          "surface": "ουτε",
+          "strongs": "3777",
+          "morph": "CONJ-N",
+          "alt": []
+        },
+        {
+          "surface": "τις",
+          "strongs": "5100",
+          "morph": "X-NSF",
+          "alt": []
+        },
+        {
+          "surface": "κτισις",
+          "strongs": "2937",
+          "morph": "N-NSF",
+          "alt": []
+        },
+        {
+          "surface": "ετερα",
+          "strongs": "2087",
+          "morph": "A-NSF",
+          "alt": []
+        },
+        {
+          "surface": "δυνησεται",
+          "strongs": "1410",
+          "morph": "V-FDI-3S",
+          "alt": []
+        },
+        {
+          "surface": "ημας",
+          "strongs": "1473",
+          "morph": "P-1AP",
+          "alt": []
+        },
+        {
+          "surface": "χωρισαι",
+          "strongs": "5563",
+          "morph": "V-AAN",
+          "alt": []
+        },
+        {
+          "surface": "απο",
+          "strongs": "575",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "αγαπης",
+          "strongs": "26",
+          "morph": "N-GSF",
+          "alt": []
+        },
+        {
+          "surface": "του",
+          "strongs": "3588",
+          "morph": "T-GSM",
+          "alt": []
+        },
+        {
+          "surface": "θεου",
+          "strongs": "2316",
+          "morph": "N-GSM",
+          "alt": []
+        },
+        {
+          "surface": "της",
+          "strongs": "3588",
+          "morph": "T-GSF",
+          "alt": []
+        },
+        {
+          "surface": "εν",
+          "strongs": "1722",
+          "morph": "PREP",
+          "alt": []
+        },
+        {
+          "surface": "χριστω",
+          "strongs": "5547",
+          "morph": "N-DSM",
+          "alt": []
+        },
+        {
+          "surface": "ιησου",
+          "strongs": "2424",
+          "morph": "N-DSM",
+          "alt": []
+        },
+        {
+          "surface": "τω",
+          "strongs": "3588",
+          "morph": "T-DSM",
+          "alt": []
+        },
+        {
+          "surface": "κυριω",
+          "strongs": "2962",
+          "morph": "N-DSM",
+          "alt": []
+        },
+        {
+          "surface": "ημων",
+          "strongs": "1473",
+          "morph": "P-1GP",
+          "alt": []
+        }
+      ],
+      "word_count": 23,
+      "kjv": "Nor height, nor depth, nor any other creature, shall be able to separate us from the love of God, which is in Christ Jesus our Lord.",
+      "kjv_raw": "Nor height, nor depth, nor any other creature, shall be able to separate us from the love of God, which is in Christ Jesus our Lord.",
+      "ind": "bukan yang tinggi atau yang dalam, atau apa pun dari semua ciptaan, akan mampu memisahkan kita dari kasih Allah, dalam Yesus Kristus, Tuhan kita.",
+      "variants": [],
+      "content_hash": "8db0264cd1dab54279972da0fb9f019259f3e9bb4520b6ce363bba12d4495bc5"
+    }
+  ]
+}
