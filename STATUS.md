@@ -25,7 +25,7 @@ Diperbarui: 2026-11-21 · Host target: `192.168.18.222` (`nms`) · DB `rag_roma8
 | Batas waktu Odoo | ✅ | `limit_time_real=600`, `limit_time_cpu=300` |
 | Pemulihan layanan | ✅ | `Restart=on-failure`, `RestartSec=5` |
 | Log layanan | ✅ | `/var/log/odoo18/odoo18.log` |
-| Panduan pengguna | ✅ | `USER_GUIDE.docx` — 15 halaman, 10 tangkapan layar asli |
+| Panduan pengguna | ✅ | `USER_GUIDE.docx` — 16 halaman, 11 tangkapan layar asli |
 
 ---
 

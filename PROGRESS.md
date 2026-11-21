@@ -401,6 +401,16 @@
 - Diperiksa menyeluruh: keempat field bertipe `Json` di modul (`params`, `stage_ms`, `citations`, `words`) kini semuanya ditampilkan lewat teks terformat; tidak ada lagi JSON mentah di view.
 - Diverifikasi secara visual dengan pengguna sementara (dibuat lalu dihapus): tab Parameter menampilkan `route: hybrid`, `rrf_k: 60`, dan seterusnya satu per baris; tab Morfologi menampilkan `#1 / morph / strongs / surface` per kata.
 
+## 35. Pengaturan RAG & Templat Prompt pada kueri
+
+- Dilaporkan: Riwayat Kueri tidak menampilkan "Pengaturan RAG", dan konsol belum punya pilihan "Templat Prompt".
+- `rag.query.log` ditambahkan field `prompt_template_id`; `config_id` yang sudah ada akhirnya ditampilkan pada form (sebelumnya hanya tersimpan tanpa terlihat).
+- Konsol **Tanya RAG** kini punya dua pilihan: **Pengaturan RAG** dan **Templat Prompt**. Templat terisi otomatis dari Pengaturan RAG (`@api.depends('config_id')`, `readonly=False`), sehingga bawaan tetap satu klik tetapi bisa diganti untuk kueri itu saja.
+- Layanan kueri menerima `template`; urutan prioritas: templat pada kueri → templat dari Pengaturan RAG → instruksi bawaan. Templat yang benar-benar dipakai ditulis ulang ke record dan ke `params` (`prompt_template`, `prompt_version`) agar bisa diaudit.
+- Diuji dengan templat baru "ringkas-dua-kalimat": jawaban turun menjadi **1 kalimat / 66 token** (sebelumnya ratusan token dengan templat eksposisi), dan record mencatat templat tersebut. Templat uji dan log-nya dihapus setelah pengujian.
+- Judul dialog konsol kini benar-benar tampil **"Tanya RAG"** (sebelumnya "Odoo"); tangkapan layar lama tertangkap sebelum field judul diterapkan.
+- Panduan diperbarui: dua baris baru pada tabel arti field riwayat, subbagian **7.1 Templat Prompt per kueri** dengan tangkapan layar konsol (11 gambar, 16 halaman).
+
 ---
 
 ## Ringkasan terkini (per 2026-11-21, sore)

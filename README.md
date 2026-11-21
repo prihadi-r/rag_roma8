@@ -33,7 +33,7 @@ Tiap ayat disandingkan paralel dalam tiga bahasa: **Yunani Koine** (Robinson-Pie
 
 ## 📖 Panduan pengguna
 
-**[USER_GUIDE.docx](USER_GUIDE.docx)** — panduan pemakaian lengkap (15 halaman) dengan 10 tangkapan layar asli: masuk ke aplikasi, membaca data ayat dan varian, mengajukan pertanyaan, membaca jawaban dan teks asli, memilih pengaturan per kueri, mengelola data, hingga pemecahan masalah.
+**[USER_GUIDE.docx](USER_GUIDE.docx)** — panduan pemakaian lengkap (16 halaman) dengan 11 tangkapan layar asli: masuk ke aplikasi, membaca data ayat dan varian, mengajukan pertanyaan, membaca jawaban dan teks asli, memilih pengaturan per kueri, mengelola data, hingga pemecahan masalah.
 
 Tangkapan layar mentah ada di [`docs/img/`](docs/img) dan dapat dibuat ulang dengan `scripts/capture_screenshots.py` (Playwright + Chrome), lalu dokumennya disusun oleh `scripts/build_user_guide.py`.
 

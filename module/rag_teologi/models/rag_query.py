@@ -15,7 +15,11 @@ class RagQueryLog(models.Model):
     name = fields.Char(string='Kueri', compute='_compute_name', store=True)
     question = fields.Text(string='Pertanyaan', required=True)
     route_id = fields.Many2one('rag.query.route', string='Jalur', ondelete='restrict', index=True)
-    config_id = fields.Many2one('rag.config', string='Konfigurasi', ondelete='set null')
+    config_id = fields.Many2one('rag.config', string='Pengaturan RAG', ondelete='set null',
+                                help='Preset yang dipakai untuk kueri ini.')
+    prompt_template_id = fields.Many2one('rag.prompt.template', string='Templat Prompt',
+                                         ondelete='set null',
+                                         help='Templat yang dipakai; bila kosong memakai templat dari Pengaturan RAG.')
 
     params = fields.Json(string='Parameter', help='top_k, rrf_k, temperature saat kueri dijalankan.')
     answer = fields.Text(string='Jawaban')

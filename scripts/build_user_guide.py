@@ -381,8 +381,8 @@ def main() -> int:
     langkah(doc, [
         'Buka Kueri → Tanya RAG.',
         'Tulis pertanyaan pada kotak paling atas.',
-        'Bila perlu, pilih Konfigurasi tertentu (lihat bagian 7). Biarkan kosong untuk '
-        'memakai pengaturan default.',
+        'Bila perlu, pilih Pengaturan RAG dan Templat Prompt tertentu (lihat bagian 7). '
+        'Keduanya sudah terisi bawaan; biarkan apa adanya bila tidak perlu diubah.',
         'Klik Tanya dan tunggu. Di mesin CPU, jawaban biasanya selesai dalam 40–170 detik.',
         'Jawaban muncul pada tab Jawaban; teks Yunani ayat yang dikutip ada pada tab '
         'Teks Asli (Yunani).',
@@ -416,6 +416,8 @@ def main() -> int:
         ['Latensi', 'Waktu total dari pertanyaan sampai jawaban selesai'],
         ['Token Prompt / Jawaban', 'Banyaknya token yang masuk ke model dan yang dihasilkan'],
         ['Ayat Terambil', 'Daftar ayat beserta peringkat vektor, peringkat kata, dan skor gabungan'],
+        ['Pengaturan RAG', 'Preset yang dipakai kueri itu (endpoint, top-k, temperature)'],
+        ['Templat Prompt', 'Templat instruksi yang dipakai; bila kosong berarti mengikuti Pengaturan RAG'],
     ], lebar=[4.2, 12.0])
 
     doc.add_heading('5.1 Tab Teks Asli (Yunani)', level=2)
@@ -470,6 +472,26 @@ def main() -> int:
             'di-embed. Bila berbeda, kueri akan ditolak dengan pesan yang menyebut kedua model — '
             'ini disengaja, karena membandingkan vektor dari model berbeda menghasilkan '
             'peringkat palsu.')
+
+    doc.add_heading('7.1 Templat Prompt per kueri', level=2)
+    doc.add_paragraph(
+        'Templat prompt adalah instruksi yang dikirim ke model sebelum pertanyaan Anda — misalnya '
+        'perintah untuk selalu menyebut nomor ayat, atau membatasi jawaban menjadi dua kalimat. '
+        'Pada konsol, templat bisa diganti khusus untuk satu kueri tanpa mengubah pengaturan lain.')
+    gambar(doc, '11-konsol-pengaturan.png',
+           'Konsol dengan pilihan Pengaturan RAG dan Templat Prompt sebelum pertanyaan diajukan.')
+    langkah(doc, [
+        'Buka Kueri → Tanya RAG.',
+        'Perhatikan dua pilihan di bawah kotak pertanyaan: Pengaturan RAG dan Templat Prompt.',
+        'Templat Prompt otomatis mengikuti templat dari Pengaturan RAG yang dipilih.',
+        'Bila ingin instruksi berbeda untuk kueri ini saja, ganti Templat Prompt; '
+        'Pengaturan RAG tidak ikut berubah.',
+        'Ajukan pertanyaan seperti biasa. Templat yang dipakai tercatat pada Riwayat Kueri.',
+    ])
+    catatan(doc, 'Membuat templat baru:',
+            'Buka Konfigurasi → Templat Prompt → New. Isi nama, versi, dan instruksinya. '
+            'Templat yang aktif akan muncul pada pilihan di konsol. Untuk memakai templat itu '
+            'sebagai bawaan, setel pada Pengaturan RAG.')
 
     # ------------------------------------------------------------ Bagian 8
     doc.add_heading('8. Pengelolaan data (RAG Manager)', level=1)

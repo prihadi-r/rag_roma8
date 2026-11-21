@@ -10,8 +10,12 @@ class RagQueryWizard(models.TransientModel):
 
     question = fields.Text(string='Pertanyaan', required=True)
     config_id = fields.Many2one(
-        'rag.config', string='Konfigurasi',
+        'rag.config', string='Pengaturan RAG',
         default=lambda self: self.env['rag.config'].get_active())
+    prompt_template_id = fields.Many2one(
+        'rag.prompt.template', string='Templat Prompt',
+        compute='_compute_prompt_template', store=True, readonly=False,
+        help='Templat bawaan diambil dari Pengaturan RAG; boleh diganti per kueri.')
     answer = fields.Text(string='Jawaban', readonly=True)
     info = fields.Char(string='Info', readonly=True)
     log_id = fields.Many2one('rag.query.log', string='Riwayat', readonly=True)
@@ -19,9 +23,15 @@ class RagQueryWizard(models.TransientModel):
                                related='log_id.greek_quotes', readonly=True)
     hit_ids = fields.Many2many('rag.chunk', string='Ayat Terambil', readonly=True)
 
+    @api.depends('config_id')
+    def _compute_prompt_template(self):
+        for rec in self:
+            rec.prompt_template_id = rec.config_id.prompt_template_id
+
     def action_ask(self):
         self.ensure_one()
-        log = self.env['rag.query.service'].ask(self.question, self.config_id or None)
+        log = self.env['rag.query.service'].ask(
+            self.question, self.config_id or None, self.prompt_template_id or None)
         self.write({
             'log_id': log.id,
             'answer': log.answer,

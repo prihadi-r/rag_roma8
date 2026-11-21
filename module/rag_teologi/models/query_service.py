@@ -80,14 +80,16 @@ class RagQueryService(models.AbstractModel):
 
     # ------------------------------------------------------------- kueri
     @api.model
-    def ask(self, pertanyaan, config=None):
+    def ask(self, pertanyaan, config=None, template=None):
         """Buat record riwayat lalu langsung jalankan."""
         pertanyaan = (pertanyaan or '').strip()
         if not pertanyaan:
             raise UserError("Pertanyaan tidak boleh kosong.")
+        cfg = config or self.env['rag.config'].get_active()
         log = self.env['rag.query.log'].create({
             'question': pertanyaan,
-            'config_id': (config or self.env['rag.config'].get_active()).id,
+            'config_id': cfg.id,
+            'prompt_template_id': (template or cfg.prompt_template_id).id or False,
         })
         return self._jalankan(log)
 
@@ -119,6 +121,9 @@ class RagQueryService(models.AbstractModel):
                 "jalankan re-embedding terlebih dahulu."
                 % (cfg.name, model.name, nama))
 
+        # templat prompt: pilihan pada kueri menang atas templat konfigurasi
+        templat = log.prompt_template_id or cfg.prompt_template_id
+
         ayat = self.deteksi_ayat(pertanyaan)
         route_code = 'direct' if ayat else 'hybrid'
         route = self.env['rag.query.route'].search([('code', '=', route_code)], limit=1)
@@ -132,6 +137,7 @@ class RagQueryService(models.AbstractModel):
             'citations': False,
             'config_id': cfg.id,
             'route_id': route.id if route else False,
+            'prompt_template_id': templat.id or False,
             'params': {
                 'top_k_dense': cfg.top_k_dense,
                 'top_k_fts': cfg.top_k_fts,
@@ -139,6 +145,8 @@ class RagQueryService(models.AbstractModel):
                 'top_k_final': cfg.top_k_final,
                 'temperature': cfg.temperature,
                 'route': route_code,
+                'prompt_template': templat.name or '-',
+                'prompt_version': templat.version or 0,
             },
         })
         # supaya state 'running' benar-benar sampai ke DB sebelum proses panjang
@@ -158,7 +166,7 @@ class RagQueryService(models.AbstractModel):
             stage['context_ms'] = max(0, int((time.time() - mulai) * 1000) - angka)
 
             t0 = time.time()
-            jawaban, usage = self._panggil_llm(pertanyaan, konteks, cfg)
+            jawaban, usage = self._panggil_llm(pertanyaan, konteks, cfg, templat)
             stage['generate_ms'] = int((time.time() - t0) * 1000)
 
             log.write({
@@ -429,8 +437,8 @@ class RagQueryService(models.AbstractModel):
 
     # ---------------------------------------------------------------- LLM
     @api.model
-    def _panggil_llm(self, pertanyaan, konteks, cfg):
-        sistem = cfg.prompt_template_id.body or (
+    def _panggil_llm(self, pertanyaan, konteks, cfg, template=None):
+        sistem = (template.body if template else None) or (
             "Jawab HANYA berdasarkan konteks. Sebutkan nomor ayat dan kutip kata persis.")
         pesan = [
             {'role': 'system', 'content': sistem},
