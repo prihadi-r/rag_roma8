@@ -422,6 +422,13 @@
 - Diuji: konfigurasi tidak lagi punya field templat; memilih konfigurasi tidak mengubah templat; templat bisa diganti bebas; pilihan tercatat di riwayat dan `params`.
 - Dua log duplikat (`24`, `25`) tidak lagi ada di database — tersisa **7 transaksi / 23 hit**, dan angka pada STATUS disesuaikan.
 
+## 37. Rilis GitHub v0.10.0
+
+- Diminta menjadikan branch `main` sebagai rilis di GitHub.
+- Ditambahkan badge rilis dan tautan ke rilis terbaru pada README lebih dulu, agar tag menunjuk commit yang sudah memuat keduanya.
+- Dibuat tag dan rilis **v0.10.0** bertarget `main` (commit `d6b7da4`), status **Latest**, bukan draf dan bukan pra-rilis, dengan catatan rilis berisi fitur, isi data, keterbatasan, dan lisensi.
+- Tag `v0.9.0` lama tetap ada sebagai penanda Milestone pertama, tanpa catatan rilis.
+
 ---
 
 ## Ringkasan terkini (per 2026-11-21, sore)
