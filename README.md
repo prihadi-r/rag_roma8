@@ -182,7 +182,7 @@ Rincian lengkap: [`docs/DESAIN-SKEMA.md`](docs/DESAIN-SKEMA.md).
 
 ## 🏷 Topik
 
-`odoo` · `odoo18` · `rag` · `retrieval-augmented-generation` · `pgvector` · `postgresql` · `llama-cpp` · `llm` · `hybrid-search` · `reciprocal-rank-fusion` · `embeddings` · `bge-m3` · `cpu-inference` · `bible` · `exegesis` · `theology` · `greek` · `byzantine-text` · `robinson-pierpont` · `kjv` · `indonesian`
+`odoo` · `odoo18` · `rag` · `retrieval-augmented-generation` · `pgvector` · `postgresql` · `llama-cpp` · `hybrid-search` · `reciprocal-rank-fusion` · `embeddings` · `bge-m3` · `cpu-inference` · `bible` · `exegesis` · `theology` · `greek` · `byzantine-text` · `robinson-pierpont` · `kjv` · `indonesian`
 
 ---
 
