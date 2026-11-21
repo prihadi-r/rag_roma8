@@ -6,6 +6,7 @@ class RagBook(models.Model):
     _table = 'rag_book'
     _description = 'Kitab'
     _order = 'sequence, id'
+    _rec_name = 'name_id'
 
     code = fields.Char(string='Kode', required=True, help='Contoh: ROM')
     name_id = fields.Char(string='Nama (ID)', required=True)

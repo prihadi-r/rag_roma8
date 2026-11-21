@@ -376,6 +376,21 @@
 - Verifikasi setelah perbaikan: layanan `active`, `Restart=on-failure`, `limit_time_real=600` efektif terbaca, logfile terbentuk dan terisi, `http://192.168.18.222:8069/web/login` merespons **303**, serta `llama-chat`, `llama-embed`, dan `postgresql` aktif.
 - Tidak ada kueri yang tertinggal berstatus `running` — transaksi request yang terbunuh ikut ter-*rollback*, termasuk record lognya.
 
+## 33. USER_GUIDE.docx dengan tangkapan layar
+
+- Diminta membuat `USER_GUIDE.docx` memakai "wordcraft MCP". **MCP itu tidak tersedia di sesi ini**: daftar plugin tidak memuat server wordcraft, tidak ada `mcpServers` pada konfigurasi, dan WordCraft yang terpasang hanyalah aplikasi desktop (AppImage 0.6.1) tanpa antarmuka server. Dokumen dibuat dengan `python-docx` sesuai skill `office-docx`.
+- Tangkapan layar diambil dari aplikasi yang benar-benar berjalan, bukan ilustrasi:
+  - dipasang `playwright` di venv terpisah di server (`/home/nms/guidetools`), memakai Chrome sistem;
+  - dibuat pengguna sementara ber-peran RAG Manager khusus untuk pengambilan gambar;
+  - `scripts/capture_screenshots.py` menelusuri menu, mengambil 10 layar, dan menyimpannya ke `/home/nms/rag-guide-shots`;
+  - pengguna sementara **dihapus** setelah selesai.
+- Dua cacat UI ditemukan justru karena panduan menampilkannya:
+  - field Kitab pada form ayat memperlihatkan `rag.book,7` — `rag.book` belum punya `_rec_name`; diperbaiki menjadi `name_id`.
+  - dialog konsol berjudul "Odoo"; ditambahkan field `name` pada wizard. Nilainya benar di server (`display_name = 'Tanya RAG'`) tetapi web client tetap menampilkan "Odoo" untuk dialog target baru — dibiarkan apa adanya karena itu yang dilihat pengguna.
+- Ditambahkan `scripts/rrun.py --get` untuk mengunduh berkas dari server (sebelumnya hanya `--put`).
+- Dokumen dibangun `scripts/build_user_guide.py`: 15 halaman, 10 gambar, 12 tabel, sampul + daftar isi, nomor halaman, dan pemotongan otomatis tepi putih pada tangkapan layar.
+- Tiga perbaikan tata letak dilakukan setelah pemeriksaan visual: penomoran langkah sempat berlanjut lintas bagian (14, 15, 16…), tabel terpotong antar halaman, dan beberapa halaman nyaris kosong akibat page break berlebih.
+
 ---
 
 ## Ringkasan terkini (per 2026-11-21, sore)

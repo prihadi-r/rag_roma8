@@ -19,6 +19,8 @@ Opsi:
     --put LOKAL REMOTE
                   unggah satu berkas lewat SFTP, lalu selesai (tanpa menjalankan
                   perintah shell)
+    --get REMOTE LOKAL
+                  unduh satu berkas lewat SFTP, lalu selesai
 """
 import os
 import shlex
@@ -47,6 +49,7 @@ def main() -> int:
     timeout = 120
     use_sudo = False
     upload = None
+    download = None
     rest = []
     i = 0
     while i < len(args):
@@ -58,6 +61,9 @@ def main() -> int:
         elif a == "--put":
             upload = (args[i + 1], args[i + 2])
             i += 2
+        elif a == "--get":
+            download = (args[i + 1], args[i + 2])
+            i += 2
         elif a == "-t":
             i += 1
             timeout = int(args[i])
@@ -66,7 +72,7 @@ def main() -> int:
         i += 1
 
     command = sys.stdin.read() if from_stdin else " ".join(rest)
-    if not upload and not command.strip():
+    if not upload and not download and not command.strip():
         print("tidak ada perintah", file=sys.stderr)
         return 2
 
@@ -107,6 +113,17 @@ def main() -> int:
         finally:
             client.close()
         print(f"unggah: {local} -> {remote} ({size:,} bytes)")
+        return 0
+
+    if download:
+        remote, local = download
+        try:
+            sftp = client.open_sftp()
+            sftp.get(remote, local)
+            sftp.close()
+        finally:
+            client.close()
+        print(f"unduh: {remote} -> {local} ({os.path.getsize(local):,} bytes)")
         return 0
 
     try:

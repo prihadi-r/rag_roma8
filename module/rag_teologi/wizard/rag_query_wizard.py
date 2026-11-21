@@ -4,6 +4,9 @@ from odoo import api, fields, models
 class RagQueryWizard(models.TransientModel):
     _name = 'rag.query.wizard'
     _description = 'Konsol Tanya RAG'
+    _rec_name = 'name'
+
+    name = fields.Char(string='Judul', default='Tanya RAG', readonly=True)
 
     question = fields.Text(string='Pertanyaan', required=True)
     config_id = fields.Many2one(
