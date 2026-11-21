@@ -1,6 +1,8 @@
 import re
 
 from odoo import api, fields, models
+
+from .json_format import format_json
 from odoo.exceptions import UserError
 
 
@@ -42,6 +44,11 @@ class RagQueryLog(models.Model):
     greek_quotes = fields.Text(string='Teks Asli (Yunani)',
                                compute='_compute_greek_quotes')
 
+    # tampilan JSON yang mudah dibaca (satu baris = satu kunci)
+    params_text = fields.Text(string='Parameter Kueri', compute='_compute_json_texts')
+    stage_text = fields.Text(string='Latensi per Tahap', compute='_compute_json_texts')
+    citations_text = fields.Text(string='Sitasi', compute='_compute_json_texts')
+
     #: "Roma 8:29", "8:29–30", "Rm 8:1"
     _POLA_KUTIPAN = re.compile(
         r'\b(?:roma|rom|rm)?\s*8\s*[:.]\s*(\d{1,2})(?:\s*[-–]\s*(\d{1,2}))?',
@@ -49,6 +56,13 @@ class RagQueryLog(models.Model):
     )
 
     # ------------------------------------------------------------------ compute
+    @api.depends('params', 'stage_ms', 'citations')
+    def _compute_json_texts(self):
+        for rec in self:
+            rec.params_text = format_json(rec.params) if rec.params else '-'
+            rec.stage_text = format_json(rec.stage_ms) if rec.stage_ms else '-'
+            rec.citations_text = format_json(rec.citations) if rec.citations else '-'
+
     @api.depends('latency_ms')
     def _compute_latency_s(self):
         for rec in self:

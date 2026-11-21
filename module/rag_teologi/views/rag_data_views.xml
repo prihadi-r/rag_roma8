@@ -179,7 +179,9 @@
                         <page string="Indonesia" name="ind">
                             <group><field name="ind"/><field name="ind_source"/></group>
                         </page>
-                        <page string="Morfologi" name="morfologi"><field name="words" readonly="1"/></page>
+                        <page string="Morfologi" name="morfologi">
+                            <field name="words_text" nolabel="1" class="w-100 text-monospace"/>
+                        </page>
                         <page string="Varian" name="varian">
                             <field name="variant_ids">
                                 <list editable="bottom">

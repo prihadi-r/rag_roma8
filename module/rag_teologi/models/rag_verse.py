@@ -3,6 +3,8 @@ import hashlib
 from odoo import api, fields, models
 from odoo.exceptions import UserError
 
+from .json_format import format_json
+
 
 class RagVerse(models.Model):
     _name = 'rag.verse'
@@ -24,6 +26,7 @@ class RagVerse(models.Model):
     transliteration = fields.Char(string='Transliterasi')
     words = fields.Json(string='Kata & Morfologi', help='Daftar {surface, strongs, morph, alt}.')
     word_count = fields.Integer(string='Jumlah Kata', compute='_compute_word_count', store=True)
+    words_text = fields.Text(string='Kata & Morfologi', compute='_compute_words_text')
 
     kjv = fields.Text(string='KJV (bersih)')
     kjv_raw = fields.Text(string='KJV (asli)', help='Menyimpan kurung siku kata sisipan penerjemah.')
@@ -66,6 +69,11 @@ class RagVerse(models.Model):
     def _compute_word_count(self):
         for rec in self:
             rec.word_count = len(rec.words or [])
+
+    @api.depends('words')
+    def _compute_words_text(self):
+        for rec in self:
+            rec.words_text = format_json(rec.words) if rec.words else '-'
 
     @api.depends('variant_ids')
     def _compute_variant_count(self):

@@ -391,6 +391,16 @@
 - Dokumen dibangun `scripts/build_user_guide.py`: 15 halaman, 10 gambar, 12 tabel, sampul + daftar isi, nomor halaman, dan pemotongan otomatis tepi putih pada tangkapan layar.
 - Tiga perbaikan tata letak dilakukan setelah pemeriksaan visual: penomoran langkah sempat berlanjut lintas bagian (14, 15, 16…), tabel terpotong antar halaman, dan beberapa halaman nyaris kosong akibat page break berlebih.
 
+## 34. Format JSON pada tab form
+
+- Dilaporkan: tab Parameter menampilkan JSON dalam satu baris panjang sehingga tidak terbaca.
+- Ditambahkan `models/json_format.py` dengan `format_json()`: dict menjadi satu baris per `key: value`, daftar objek menjadi blok bernomor, daftar skalar digabung dalam satu baris, dan nilai kosong (`null`, `""`, `[]`, `{}`) dilewati agar tidak menenggelamkan data penting.
+- Diterapkan lewat field terhitung agar ORM tetap menyimpan JSON aslinya:
+  - `rag.query.log`: `params_text`, `stage_text`, `citations_text` (tab **Parameter**).
+  - `rag.verse`: `words_text` (tab **Morfologi**).
+- Diperiksa menyeluruh: keempat field bertipe `Json` di modul (`params`, `stage_ms`, `citations`, `words`) kini semuanya ditampilkan lewat teks terformat; tidak ada lagi JSON mentah di view.
+- Diverifikasi secara visual dengan pengguna sementara (dibuat lalu dihapus): tab Parameter menampilkan `route: hybrid`, `rrf_k: 60`, dan seterusnya satu per baris; tab Morfologi menampilkan `#1 / morph / strongs / surface` per kata.
+
 ---
 
 ## Ringkasan terkini (per 2026-11-21, sore)

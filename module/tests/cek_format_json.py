@@ -1,0 +1,11 @@
+from odoo.addons.rag_teologi.models.json_format import format_json
+log = env['rag.query.log'].browse(27)
+print("=== PARAMETER ===")
+print(log.params_text)
+print("\n=== LATENSI PER TAHAP ===")
+print(log.stage_text)
+print("\n=== SITASI (3 baris pertama) ===")
+print("\n".join(log.citations_text.splitlines()[:9]))
+v = env['rag.verse'].search([('chapter','=',8),('verse_no','=',1)], limit=1)
+print("\n=== MORFOLOGI 8:1 (potongan) ===")
+print("\n".join(v.words_text.splitlines()[:10]))

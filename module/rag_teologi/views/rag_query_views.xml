@@ -68,9 +68,12 @@
                             </field>
                         </page>
                         <page string="Parameter" name="params">
-                            <field name="params" readonly="1"/>
-                            <field name="stage_ms" readonly="1"/>
-                            <field name="citations" readonly="1"/>
+                            <separator string="Parameter Kueri"/>
+                            <field name="params_text" nolabel="1" class="w-100 text-monospace"/>
+                            <separator string="Latensi per Tahap"/>
+                            <field name="stage_text" nolabel="1" class="w-100 text-monospace"/>
+                            <separator string="Sitasi"/>
+                            <field name="citations_text" nolabel="1" class="w-100 text-monospace"/>
                         </page>
                         <page string="Galat" name="error">
                             <field name="error" readonly="1"/>
