@@ -13,7 +13,7 @@
                            options="{'no_create': True, 'no_open': False}"
                            help="Pilih pengaturan RAG yang dipakai khusus untuk kueri ini. Bila kosong, dipakai pengaturan aktif."/>
                     <field name="prompt_template_id"
-                           domain="[('active', '=', True)]"
+                           domain="[('active', '=', True), ('role', '=', 'system')]"
                            options="{'no_create': True, 'no_open': False}"
                            help="Templat instruksi untuk kueri ini. Bawaannya mengikuti Pengaturan RAG."/>
                 </group>

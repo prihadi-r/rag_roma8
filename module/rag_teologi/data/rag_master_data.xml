@@ -98,7 +98,6 @@ ATURAN:
             <field name="chat_model">qwen2.5-7b-instruct</field>
             <field name="embed_base_url">http://127.0.0.1:8080/v1</field>
             <field name="embedding_model_id" ref="embedding_model_bge_m3"/>
-            <field name="prompt_template_id" ref="prompt_system_v1"/>
         </record>
 
     </data>

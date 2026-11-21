@@ -411,6 +411,17 @@
 - Judul dialog konsol kini benar-benar tampil **"Tanya RAG"** (sebelumnya "Odoo"); tangkapan layar lama tertangkap sebelum field judul diterapkan.
 - Panduan diperbarui: dua baris baru pada tabel arti field riwayat, subbagian **7.1 Templat Prompt per kueri** dengan tangkapan layar konsol (11 gambar, 16 halaman).
 
+## 36. Templat prompt dipisahkan dari Pengaturan RAG
+
+- Dilaporkan: templat prompt tidak semestinya menjadi bagian Pengaturan RAG — pengguna harus bisa memilih keduanya secara bebas.
+- Field `prompt_template_id` **dihapus** dari `rag.config` (model, view, dan data awal). Kolomnya ikut hilang dari database saat upgrade.
+- Konsol *Tanya RAG* kini menyediakan dua pilihan yang berdiri sendiri: **Pengaturan RAG** dan **Templat Prompt**. Mengganti konfigurasi tidak lagi mengubah templat.
+- Templat awal diambil dari templat sistem aktif dengan versi tertinggi (`eksposisi-grounding v2`), bukan dari konfigurasi.
+- Layanan kueri: urutan prioritas menjadi **templat pada kueri → templat sistem terbaru → instruksi bawaan**. Pengaturan RAG tidak lagi ikut menentukan.
+- **Celah yang ditemukan saat uji:** pilihan templat semula menampilkan semua templat aktif, termasuk `context-builder` yang berperan membangun konteks — memilihnya menghasilkan jawaban yang mengulang struktur konteks. Domain pilihan kini dibatasi `role = 'system'`.
+- Diuji: konfigurasi tidak lagi punya field templat; memilih konfigurasi tidak mengubah templat; templat bisa diganti bebas; pilihan tercatat di riwayat dan `params`.
+- Dua log duplikat (`24`, `25`) tidak lagi ada di database — tersisa **7 transaksi / 23 hit**, dan angka pada STATUS disesuaikan.
+
 ---
 
 ## Ringkasan terkini (per 2026-11-21, sore)

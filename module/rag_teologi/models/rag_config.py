@@ -61,7 +61,6 @@ class RagConfig(models.Model):
     timeout_chat_s = fields.Integer(string='Timeout Chat (detik)', default=180)
     timeout_embed_s = fields.Integer(string='Timeout Embedding (detik)', default=30)
 
-    prompt_template_id = fields.Many2one('rag.prompt.template', string='Templat Prompt', ondelete='restrict')
     active = fields.Boolean(default=True)
 
     @api.constrains('temperature')

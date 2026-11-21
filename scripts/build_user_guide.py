@@ -417,7 +417,7 @@ def main() -> int:
         ['Token Prompt / Jawaban', 'Banyaknya token yang masuk ke model dan yang dihasilkan'],
         ['Ayat Terambil', 'Daftar ayat beserta peringkat vektor, peringkat kata, dan skor gabungan'],
         ['Pengaturan RAG', 'Preset yang dipakai kueri itu (endpoint, top-k, temperature)'],
-        ['Templat Prompt', 'Templat instruksi yang dipakai; bila kosong berarti mengikuti Pengaturan RAG'],
+        ['Templat Prompt', 'Templat instruksi yang dipakai; bila kosong dipakai templat sistem terbaru'],
     ], lebar=[4.2, 12.0])
 
     doc.add_heading('5.1 Tab Teks Asli (Yunani)', level=2)
@@ -477,21 +477,23 @@ def main() -> int:
     doc.add_paragraph(
         'Templat prompt adalah instruksi yang dikirim ke model sebelum pertanyaan Anda — misalnya '
         'perintah untuk selalu menyebut nomor ayat, atau membatasi jawaban menjadi dua kalimat. '
-        'Pada konsol, templat bisa diganti khusus untuk satu kueri tanpa mengubah pengaturan lain.')
+        'Templat berdiri sendiri, terpisah dari Pengaturan RAG: keduanya dipilih bebas pada konsol '
+        'dan saling tidak memengaruhi.')
     gambar(doc, '11-konsol-pengaturan.png',
            'Konsol dengan pilihan Pengaturan RAG dan Templat Prompt sebelum pertanyaan diajukan.')
     langkah(doc, [
         'Buka Kueri → Tanya RAG.',
         'Perhatikan dua pilihan di bawah kotak pertanyaan: Pengaturan RAG dan Templat Prompt.',
-        'Templat Prompt otomatis mengikuti templat dari Pengaturan RAG yang dipilih.',
-        'Bila ingin instruksi berbeda untuk kueri ini saja, ganti Templat Prompt; '
-        'Pengaturan RAG tidak ikut berubah.',
+        'Keduanya berdiri sendiri — mengganti salah satu tidak mengubah yang lain.',
+        'Pilih templat sesuai kebutuhan: yang menekankan sitasi ayat, yang membatasi panjang '
+        'jawaban, dan sebagainya.',
         'Ajukan pertanyaan seperti biasa. Templat yang dipakai tercatat pada Riwayat Kueri.',
     ])
     catatan(doc, 'Membuat templat baru:',
-            'Buka Konfigurasi → Templat Prompt → New. Isi nama, versi, dan instruksinya. '
-            'Templat yang aktif akan muncul pada pilihan di konsol. Untuk memakai templat itu '
-            'sebagai bawaan, setel pada Pengaturan RAG.')
+            'Buka Konfigurasi → Templat Prompt → New. Isi nama, versi, dan instruksinya dengan '
+            'peran "system". Templat aktif akan muncul pada pilihan di konsol dan dapat dipakai '
+            'tanpa mengubah Pengaturan RAG. Bila tidak ada yang dipilih, aplikasi memakai templat '
+            'sistem dengan versi tertinggi.')
 
     # ------------------------------------------------------------ Bagian 8
     doc.add_heading('8. Pengelolaan data (RAG Manager)', level=1)

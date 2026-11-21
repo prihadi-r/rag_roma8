@@ -14,8 +14,10 @@ class RagQueryWizard(models.TransientModel):
         default=lambda self: self.env['rag.config'].get_active())
     prompt_template_id = fields.Many2one(
         'rag.prompt.template', string='Templat Prompt',
-        compute='_compute_prompt_template', store=True, readonly=False,
-        help='Templat bawaan diambil dari Pengaturan RAG; boleh diganti per kueri.')
+        domain="[('active', '=', True), ('role', '=', 'system')]",
+        default=lambda self: self._templat_bawaan(),
+        help='Templat instruksi untuk kueri ini. Berdiri sendiri, tidak terikat Pengaturan RAG. '
+             'Hanya templat berperan "system" yang ditawarkan.')
     answer = fields.Text(string='Jawaban', readonly=True)
     info = fields.Char(string='Info', readonly=True)
     log_id = fields.Many2one('rag.query.log', string='Riwayat', readonly=True)
@@ -23,10 +25,12 @@ class RagQueryWizard(models.TransientModel):
                                related='log_id.greek_quotes', readonly=True)
     hit_ids = fields.Many2many('rag.chunk', string='Ayat Terambil', readonly=True)
 
-    @api.depends('config_id')
-    def _compute_prompt_template(self):
-        for rec in self:
-            rec.prompt_template_id = rec.config_id.prompt_template_id
+    @api.model
+    def _templat_bawaan(self):
+        """Templat sistem aktif dengan versi tertinggi sebagai pilihan awal."""
+        return self.env['rag.prompt.template'].search(
+            [('active', '=', True), ('role', '=', 'system')],
+            order='name, version desc', limit=1)
 
     def action_ask(self):
         self.ensure_one()

@@ -44,7 +44,6 @@
                         </group>
                         <group string="Konteks &amp; Prompt">
                             <field name="context_budget_chars"/>
-                            <field name="prompt_template_id"/>
                             <field name="active"/>
                         </group>
                     </group>

@@ -20,7 +20,7 @@ Diperbarui: 2026-11-21 · Host target: `192.168.18.222` (`nms`) · DB `rag_roma8
 | Odoo | ✅ | **18.2alpha1**, `/opt/odoo18` |
 | Modul `rag_teologi` | ✅ | **17 tabel inti** + 3 tabel wizard sementara · 18 menu · 14 aksi · 25 view · 36 ACL · 4 rule |
 | Data Roma 8 | ✅ | 4 perikop · 39 ayat · 21 varian · 39 chunk · **39 vektor** |
-| Riwayat kueri | ✅ | **9 transaksi · 33 hit** |
+| Riwayat kueri | ✅ | **7 transaksi · 23 hit** |
 | Ekspansi kueri | ✅ | **12 istilah** sinonim teologis |
 | Batas waktu Odoo | ✅ | `limit_time_real=600`, `limit_time_cpu=300` |
 | Pemulihan layanan | ✅ | `Restart=on-failure`, `RestartSec=5` |

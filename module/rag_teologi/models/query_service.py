@@ -38,6 +38,13 @@ class RagQueryService(models.AbstractModel):
 
     # ------------------------------------------------------------- router
     @api.model
+    def _templat_bawaan(self):
+        """Templat sistem aktif dengan versi tertinggi."""
+        return self.env['rag.prompt.template'].search(
+            [('active', '=', True), ('role', '=', 'system')],
+            order='name, version desc', limit=1)
+
+    @api.model
     def deteksi_ayat(self, pertanyaan):
         """Kembalikan daftar nomor ayat bila pertanyaan menyebut referensi."""
         cocok = _POLA_AYAT.search(pertanyaan or '')
@@ -89,7 +96,7 @@ class RagQueryService(models.AbstractModel):
         log = self.env['rag.query.log'].create({
             'question': pertanyaan,
             'config_id': cfg.id,
-            'prompt_template_id': (template or cfg.prompt_template_id).id or False,
+            'prompt_template_id': (template or self._templat_bawaan()).id or False,
         })
         return self._jalankan(log)
 
@@ -121,8 +128,8 @@ class RagQueryService(models.AbstractModel):
                 "jalankan re-embedding terlebih dahulu."
                 % (cfg.name, model.name, nama))
 
-        # templat prompt: pilihan pada kueri menang atas templat konfigurasi
-        templat = log.prompt_template_id or cfg.prompt_template_id
+        # templat prompt berdiri sendiri; bila kosong pakai templat sistem terbaru
+        templat = log.prompt_template_id or self._templat_bawaan()
 
         ayat = self.deteksi_ayat(pertanyaan)
         route_code = 'direct' if ayat else 'hybrid'

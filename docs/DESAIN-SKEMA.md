@@ -67,7 +67,7 @@ Keputusan penting: kita **hanya membuat satu collection pencarian**, yaitu `rag_
 
 | Aturan (dari PLAN §6) | Penerapan |
 |---|---|
-| `Many2one` untuk semua referensi | `book_id`, `pericope_id`, `witness_id`, `variant_type_id`, `chunk_kind_id`, `embedding_model_id`, `route_id`, `prompt_template_id` |
+| `Many2one` untuk semua referensi | `book_id`, `pericope_id`, `witness_id`, `variant_type_id`, `chunk_kind_id`, `embedding_model_id`, `route_id`, dan `prompt_template_id` **pada riwayat kueri** (bukan pada konfigurasi) |
 | `Selection` **hanya** untuk status | Hanya field `state` pada `rag_verse`, `rag_chunk`, `rag_query_log`, `rag_import_batch` |
 | Kolom `vector`/`tsvector` di luar ORM | Dibuat lewat SQL hook; dibaca/tulis lewat helper `cr.execute` |
 | Nama tabel | Eksplisit `_table = 'rag_*'` (bukan awalan modul) — proyek tunggal, nama pendek lebih terbaca. **Konsekuensi:** jangan pasang dua modul RAG sekaligus |
@@ -107,6 +107,8 @@ Mencatat model mana yang menghasilkan vektor. Tanpa ini, mengganti model di teng
 
 ### 5.2 `rag_config`
 
+> **Revisi implementasi:** `prompt_template_id` **dihapus** dari tabel ini. Templat prompt berdiri sendiri; pengguna memilihnya per kueri pada konsol, dan pilihan itu dicatat di `rag_query_log.prompt_template_id`.
+
 Singleton konfigurasi. Satu baris aktif.
 
 | Field | Tipe | Default | Catatan |
@@ -125,7 +127,6 @@ Singleton konfigurasi. Satu baris aktif.
 | `context_budget_chars` | integer | 6000 | ±1.500 token |
 | `timeout_chat_s` | integer | 180 | |
 | `timeout_embed_s` | integer | 30 | |
-| `prompt_template_id` | m2o | — | |
 | `active` | boolean | true | |
 
 **Constraint:** `unique(active) WHERE active` → mustahil ada dua konfigurasi aktif.
