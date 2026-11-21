@@ -6,6 +6,7 @@
 ![pgvector](https://img.shields.io/badge/pgvector-0.6.0-orange)
 ![llama.cpp](https://img.shields.io/badge/llama.cpp-CPU--only-lightgrey)
 ![Python](https://img.shields.io/badge/python-3.12-3776AB)
+![Rilis](https://img.shields.io/badge/rilis-v0.10.0-brightgreen)
 ![Status](https://img.shields.io/badge/status-beta-yellow)
 
 Sistem **Retrieval-Augmented Generation lokal** untuk studi eksposisi dan perbandingan tekstual **Roma 8:1–39**, berjalan sepenuhnya di dalam **Odoo** tanpa *orchestrator* eksternal — tanpa GPU, tanpa layanan cloud.
@@ -32,6 +33,8 @@ Tiap ayat disandingkan paralel dalam tiga bahasa: **Yunani Koine** (Robinson-Pie
 ---
 
 ## 📖 Panduan pengguna
+
+> **Rilis terbaru:** [v0.10.0](https://github.com/prihadi-r/rag_roma8/releases/latest) — Fase 0–7 lengkap.
 
 **[USER_GUIDE.docx](USER_GUIDE.docx)** — panduan pemakaian lengkap (16 halaman) dengan 11 tangkapan layar asli: masuk ke aplikasi, membaca data ayat dan varian, mengajukan pertanyaan, membaca jawaban dan teks asli, memilih pengaturan per kueri, mengelola data, hingga pemecahan masalah.
 
